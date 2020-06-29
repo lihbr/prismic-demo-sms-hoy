@@ -24,15 +24,7 @@ module.exports = async () => {
     /*
      ** Head of the page, handled by head module
      */
-    head: {
-      link: [
-        {
-          rel: "stylesheet",
-          href:
-            "https://fonts.googleapis.com/css?family=Roboto:300,400,700,300italic&display=fallback"
-        }
-      ]
-    },
+    head: {},
 
     /*
      ** Customize the progress-bar color
@@ -42,7 +34,10 @@ module.exports = async () => {
     /*
      ** Global CSS
      */
-    css: ["~/assets/sass/style.sass"],
+    css: [
+      "source-sans-pro/source-sans-variable.css",
+      "~/assets/sass/style.sass"
+    ],
 
     /*
      ** Plugins to load before mounting the App
@@ -58,8 +53,6 @@ module.exports = async () => {
      ** Nuxt.js build modules
      */
     buildModules: [
-      "@nuxtjs/eslint-module",
-      "~/modules/build",
       [
         "~/modules/head",
         {
@@ -77,13 +70,10 @@ module.exports = async () => {
           url: env.APP_URL
         }
       ],
-      "~/modules/payload",
-      "~/modules/statistics",
-      "~/modules/tailwindcss",
+      "@nuxtjs/eslint-module",
       "@nuxtjs/global-components",
       "@nuxtjs/style-resources",
       "@nuxtjs/sitemap",
-      "@nuxtjs/feed",
       ["@nuxtjs/netlify-files", { existingFilesDirectory: __dirname }],
       [
         "@nuxtjs/gtm",
@@ -122,7 +112,29 @@ module.exports = async () => {
           }
         }
       ],
-      "nuxt-svg-loader"
+      "nuxt-svg-loader",
+      [
+        "@nuxtjs/tailwindcss",
+        {
+          configPath: "~~/tailwind.config.js",
+          cssPath: "~/assets/sass/style.sass"
+        }
+      ],
+      [
+        "@nuxtjs/prismic",
+        {
+          endpoint: "https://200619-misc-sms-wize.prismic.io/api/v2",
+          apiOptions: {
+            routes: [
+              {
+                type: "page",
+                path: "/:uid"
+              }
+            ]
+          }
+        }
+      ],
+      "nuxt-sm"
     ],
 
     /*
@@ -156,11 +168,6 @@ module.exports = async () => {
     },
 
     /*
-     ** Feed
-     */
-    feed: [],
-
-    /*
      ** Env
      */
     env,
@@ -171,6 +178,26 @@ module.exports = async () => {
     server: {
       host: env.APP_HOST,
       port: env.APP_PORT
+    },
+
+    /*
+     ** Build
+     */
+    build: {
+      extractCSS: !env.DEV,
+      loaders: {
+        sass: {
+          implementation: require("sass"),
+          fiber: require("fibers")
+        }
+      },
+      html: {
+        minify: {
+          minifyCSS: false,
+          minifyJS: false
+        }
+      },
+      transpile: ["vue-slicezone"]
     }
   };
 };

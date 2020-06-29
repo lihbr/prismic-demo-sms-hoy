@@ -15,7 +15,7 @@ export default {
     // Component
   },
   async asyncData(context) {
-    return await context.$pagePayload(context);
+    return { data: {} };
   },
   mounted() {
     this.$store.dispatch("pageChanged");
