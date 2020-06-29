@@ -1,6 +1,6 @@
-# template-vue-nuxt
+# sms-hoy
 
-A Nuxt.js starter pack to build app with Vue.js
+HOY with [Slice Machine](https://slicemachine.dev)
 
 <!-- Place badges here -->
 
