@@ -43,8 +43,8 @@ module.exports = plop => {
     actions: data => [
       {
         type: "add",
-        path: `${__dirname}/src/components/{{ category }}/{{ pathCase namespace }}/{{ pascalCase name }}.vue`,
-        templateFile: `${__dirname}/src/plop-templates/component.vue`,
+        path: `${__dirname}/components/{{ category }}/{{ pathCase namespace }}/{{ pascalCase name }}.vue`,
+        templateFile: `${__dirname}/plop-templates/component.vue`,
         force: false,
         data: {
           fullname: `${data.namespace}/${data.name}`
@@ -74,8 +74,8 @@ module.exports = plop => {
     actions: [
       {
         type: "add",
-        path: `${__dirname}/src/pages/{{ pathCase route }}/{{ param }}.vue`,
-        templateFile: `${__dirname}/src/plop-templates/page.vue`,
+        path: `${__dirname}/pages/{{ pathCase route }}/{{ param }}.vue`,
+        templateFile: `${__dirname}/plop-templates/page.vue`,
         force: false,
         data: {},
         abortOnFail: true
@@ -95,8 +95,8 @@ module.exports = plop => {
     actions: [
       {
         type: "add",
-        path: `${__dirname}/src/layouts/{{ camelCase name }}.vue`,
-        templateFile: `${__dirname}/src/plop-templates/layout.vue`,
+        path: `${__dirname}/layouts/{{ camelCase name }}.vue`,
+        templateFile: `${__dirname}/plop-templates/layout.vue`,
         force: false,
         data: {},
         abortOnFail: true

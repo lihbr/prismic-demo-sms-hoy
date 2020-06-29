@@ -1,4 +1,4 @@
 {
-  "libraries": ["@/src/slices"],
+  "libraries": ["@/slices"],
   "apiEndpoint": "https://200629-sms-hoy.cdn.prismic.io/api/v2"
 }

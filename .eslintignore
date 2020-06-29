@@ -1,6 +1,6 @@
-src/modules/*/plugin.js
-src/plop-templates/*.vue
-src/static/sw.js
+modules/*/plugin.js
+plop-templates/*.vue
+static/sw.js
 
 # .gitignore copy
 

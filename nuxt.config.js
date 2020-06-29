@@ -17,11 +17,6 @@ module.exports = async () => {
     target: "static",
 
     /*
-     ** Application directory
-     */
-    srcDir: "src/",
-
-    /*
      ** Head of the page, handled by head module
      */
     head: {},
