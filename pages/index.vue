@@ -2,20 +2,22 @@
 <template>
   <div class="__page__home">
     <div class="content">
-      Home
+      <slice-zone class="sliceZone grid" :slices="data.body" />
     </div>
   </div>
 </template>
 
 <script>
-// import Component from "~/components/Component.vue";
+import SliceZone from "vue-slicezone";
 
 export default {
   components: {
-    // Component
+    SliceZone
   },
   async asyncData(context) {
-    return { data: {} };
+    const data = (await context.$prismic.api.getByUID("page", "home")).data;
+
+    return { data };
   },
   mounted() {
     this.$store.dispatch("pageChanged");

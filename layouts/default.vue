@@ -55,7 +55,6 @@ export default {
 
 <style lang="sass">
 html
-  @apply font-main text-black bg-white
   font-size: 16px // don't change this!
   word-spacing: 1px
   -ms-text-size-adjust: 100%
@@ -63,4 +62,5 @@ html
   -moz-osx-font-smoothing: grayscale
   -webkit-font-smoothing: antialiased
   box-sizing: border-box
+  @apply font-main text-black bg-white
 </style>

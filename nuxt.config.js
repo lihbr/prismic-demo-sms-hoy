@@ -118,7 +118,7 @@ module.exports = async () => {
       [
         "@nuxtjs/prismic",
         {
-          endpoint: "https://200619-misc-sms-wize.prismic.io/api/v2",
+          endpoint: "https://200629-sms-hoy.prismic.io/api/v2",
           apiOptions: {
             routes: [
               {
