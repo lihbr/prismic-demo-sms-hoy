@@ -68,6 +68,19 @@
                   },
                   "thumbnails": []
                 }
+              },
+              "caption": {
+                "type": "Text",
+                "config": {
+                  "label": "Caption",
+                  "placeholder": "Image caption (optional)"
+                }
+              },
+              "caption_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Caption color"
+                }
               }
             }
           }
