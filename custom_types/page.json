@@ -1,0 +1,120 @@
+{
+  "Page": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "unique-identifier-eg-homepage"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "config": {
+        "choices": {
+          "simple_text": {
+            "type": "Slice",
+            "fieldset": "Text",
+            "description": "A simple text section with an optional title",
+            "icon": "menu",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "This is where it all begins... (optional)",
+                  "single": "heading2"
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Text",
+                  "single": "strong, em, hyperlink",
+                  "allowTargetBlank": true
+                }
+              }
+            }
+          },
+          "text_image": {
+            "type": "Slice",
+            "fieldset": "Text Image",
+            "description": "A simple text and image section with an optional title",
+            "icon": "art_track",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "This is where it all begins... (optional)",
+                  "single": "heading2"
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Text",
+                  "single": "strong, em, hyperlink",
+                  "allowTargetBlank": true
+                }
+              },
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {
+                    "width": 600
+                  },
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        },
+        "labels": {
+          "text_image": [
+            {
+              "name": "inverted",
+              "display": "Invert text & image"
+            }
+          ]
+        }
+      },
+      "fieldset": "Slice zone"
+    }
+  },
+  "SEO Metadata": {
+    "meta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title",
+        "placeholder": "Fallback to default one if empty (max. 50 characters)"
+      }
+    },
+    "meta_description": {
+      "type": "Text",
+      "config": {
+        "label": "Description",
+        "placeholder": "Fallback to default one if empty (max. 155 characters)"
+      }
+    },
+    "meta_image": {
+      "type": "Image",
+      "config": {
+        "label": "Image",
+        "constraint": {
+          "width": 1200,
+          "height": 630
+        },
+        "thumbnails": [
+          {
+            "name": "twitter_variant",
+            "width": 1200,
+            "height": 600
+          }
+        ]
+      }
+    }
+  }
+}

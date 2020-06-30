@@ -1,8 +1,8 @@
 {
   "type": "Slice",
-  "fieldset": "Text Image",
-  "description": "A simple text and image section with an optional title",
-  "icon": "art_track",
+  "fieldset": "Text",
+  "description": "A simple text section with an optional title",
+  "icon": "menu",
   "display": "list",
   "non-repeat": {
     "title": {
@@ -19,16 +19,6 @@
         "label": "Text",
         "single": "strong, em, hyperlink",
         "allowTargetBlank": true
-      }
-    },
-    "image": {
-      "type": "Image",
-      "config": {
-        "label": "Image",
-        "constraint": {
-          "width": 600
-        },
-        "thumbnails": []
       }
     }
   }

@@ -41,11 +41,29 @@ module.exports = {
     },
     colors: {
       black: {
-        default: "#111111"
+        default: "#222222"
       },
       white: {
-        default: "#fefefe"
+        default: "#ffffff"
       }
+    },
+    fontSize: {
+      "3xs": "0.5rem", //   8px
+      "2xs": "0.625rem", // 10px
+      xs: "0.75rem", //     12px
+      s: "0.875rem", //     14px
+      m: "1rem", //         16px*
+      l: "1.125rem", //     18px*
+      xl: "1.25rem", //     20px
+      "2xl": "1.375rem", // 22px*
+      "3xl": "1.75rem", //  28px
+      "4xl": "2rem", //     32px*
+      "5xl": "2.25rem", //  36px
+      "6xl": "2.75rem", //  44px*
+      "7xl": "3.25rem", //  52px
+      "8xl": "4rem", //     64px
+      "9xl": "4.5rem", //   72px
+      "10xl": "5rem" //     80px
     }
   },
   variants: {},
