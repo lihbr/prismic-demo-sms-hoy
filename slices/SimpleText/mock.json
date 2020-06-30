@@ -1,12 +1,15 @@
 {
-  "slice_type": "call_to_action",
-  "slice_label": "",
-  "items": [{}],
+  "slice_type": "simple_text",
+  "slice_label": null,
+  "items": [],
   "primary": {
-    "title": [{
-      "type": "heading1",
-      "text": "Template for SimpleText slice",
-      "spans": []
-    }]
+    "title": [{ "type": "heading2", "text": "Fish-only diet?!", "spans": [] }],
+    "text": [
+      {
+        "type": "paragraph",
+        "text": "Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed. It is a sociable bird and it usually breeds in large colonies.",
+        "spans": []
+      }
+    ]
   }
 }
