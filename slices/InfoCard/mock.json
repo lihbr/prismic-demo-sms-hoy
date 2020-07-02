@@ -1,0 +1,30 @@
+{
+  "slice_type": "info_card",
+  "slice_label": "inverted",
+  "items": [{}],
+  "primary": {
+    "title": [
+      {
+        "type": "heading2",
+        "text": "Taxonomy and etymology of the Atlantic Puffin",
+        "spans": []
+      }
+    ],
+    "text": [
+      {
+        "type": "paragraph",
+        "text": "The Atlantic puffin is a species of seabird in the order Charadriiformes. It is in the auk family, Alcidae, which includes the guillemots, typical auks, murrelets, auklets, puffins, and the razorbill.",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": { "width": 600, "height": 500 },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.prismic.io/200629-sms-hoy/c7dd03d7-4560-4f6c-a0c7-2d6482cfafc7_ray-hennessy-Dq88eI3asTE-unsplash.jpg?auto=compress,format&rect=243,0,1916,1597&w=600&h=500"
+    },
+    "text_color": "#a2008f",
+    "background_color": "#b3eaf4",
+    "background_shape": "Shape 1"
+  }
+}

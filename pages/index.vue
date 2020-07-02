@@ -20,6 +20,8 @@ export default {
     return { data };
   },
   mounted() {
+    console.log(JSON.stringify(this.data.body[2]));
+
     this.$store.dispatch("pageChanged");
   },
   head() {

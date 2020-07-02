@@ -64,7 +64,6 @@ module.exports = async () => {
       ],
       "@nuxtjs/eslint-module",
       "@nuxtjs/global-components",
-      "@nuxtjs/style-resources",
       "@nuxtjs/sitemap",
       ["@nuxtjs/netlify-files", { existingFilesDirectory: __dirname }],
       [
@@ -104,7 +103,6 @@ module.exports = async () => {
           }
         }
       ],
-      "nuxt-svg-loader",
       [
         "@nuxtjs/tailwindcss",
         {

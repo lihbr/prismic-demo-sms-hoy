@@ -21,7 +21,7 @@
         <figure class="mt-8 sm:mt-0 sm:px-4 sm:flex-1 relative">
           <prismic-image
             :field="slice.primary.image"
-            class="w-full shadow-xl rounded-lg"
+            class="w-full shadow-xl rounded-xl"
           />
           <figcaption
             v-if="slice.primary.caption"
