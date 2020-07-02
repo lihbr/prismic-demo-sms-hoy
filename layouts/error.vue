@@ -45,7 +45,3 @@ export default {
   }
 };
 </script>
-
-<style lang="sass" scoped>
-// .__page__error
-</style>

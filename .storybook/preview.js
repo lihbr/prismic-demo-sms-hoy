@@ -1,7 +1,6 @@
 import Vue from "vue";
 import { configure } from "@storybook/vue";
-import "source-sans-pro/source-sans-variable.css"
-import "./tailwind.css";
+import "~/assets/css/style.css";
 
 // Nuxt
 Vue.component("nuxt-link", {

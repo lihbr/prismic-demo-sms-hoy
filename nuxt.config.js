@@ -29,10 +29,7 @@ module.exports = async () => {
     /*
      ** Global CSS
      */
-    css: [
-      "source-sans-pro/source-sans-variable.css",
-      "~/assets/sass/style.sass"
-    ],
+    css: ["~/assets/css/style.css"],
 
     /*
      ** Plugins to load before mounting the App
@@ -112,7 +109,7 @@ module.exports = async () => {
         "@nuxtjs/tailwindcss",
         {
           configPath: "~~/tailwind.config.js",
-          cssPath: "~/assets/sass/style.sass"
+          cssPath: "~/assets/css/style.css"
         }
       ],
       [
@@ -131,13 +128,6 @@ module.exports = async () => {
       ],
       "nuxt-sm"
     ],
-
-    /*
-     ** Style resources
-     */
-    styleResources: {
-      sass: "~/assets/sass/core.sass"
-    },
 
     /*
      ** Export
@@ -180,12 +170,6 @@ module.exports = async () => {
      */
     build: {
       extractCSS: !env.DEV,
-      loaders: {
-        sass: {
-          implementation: require("sass"),
-          fiber: require("fibers")
-        }
-      },
       html: {
         minify: {
           minifyCSS: false,

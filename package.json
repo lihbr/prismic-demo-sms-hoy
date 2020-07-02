@@ -75,8 +75,6 @@
     "nuxt-sm": "0.0.4",
     "nuxt-svg-loader": "1.2.0",
     "prettier": "2.0.5",
-    "sass": "1.26.9",
-    "sass-loader": "7.1.0",
     "shx": "0.3.2",
     "vue-loader": "15.9.3",
     "vue-template-compiler": "2.6.11"

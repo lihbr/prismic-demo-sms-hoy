@@ -35,6 +35,6 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-// .__page__{{ kebabCase route }}
+<style scoped>
+/* .__page__{{ kebabCase route }} */
 </style>

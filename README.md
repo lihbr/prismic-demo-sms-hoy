@@ -16,12 +16,7 @@ This website is made with [Vue.js](https://vuejs.org) under [Nuxt.js](https://nu
 
 ### Prerequisites
 
-In order to improve `.sass` file compilation this projet relies on `fibers`. While you should not have any problem with it on Mac or Linux OS you need on Windows to have few more dependencies:
-
-```bash
-$ npm install -g node-gyp@latest
-$ npm install -g --production windows-build-tools
-```
+None~
 
 <!-- Uncomment is using Netlify functions -->
 
