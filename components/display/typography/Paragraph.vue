@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-.typographyParagraph a {
+.typographyParagraph::v-deep a {
   text-decoration: underline;
 }
 </style>
