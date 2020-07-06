@@ -1,9 +1,7 @@
 const { getWebpackConfig } = require("nuxt");
 
 module.exports = {
-  // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
-  // You can change the configuration based on that.
-  // 'PRODUCTION' is used when building the static version of storybook.
+  addons: ["@storybook/addon-knobs/register"],
   webpackFinal: async (sbWebpack, { configType }) => {
     const nuxtWebpack = await getWebpackConfig("client", {
       for: process.env.NODE_ENV === "production" ? "build" : "dev"
