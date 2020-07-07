@@ -106,11 +106,11 @@ $ npm run build && npm run export
 
 You'll end up with the built site available at `./dist`
 
-## Inspiration
+<!-- ## Inspiration
 
 - [Link to inspiring stuff](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Todo
 
 - [x] Done item
-- [ ] Todo item
+- [ ] Todo item -->
