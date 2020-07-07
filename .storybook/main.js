@@ -2,6 +2,7 @@ const { getWebpackConfig } = require("nuxt");
 
 module.exports = {
   addons: ["@storybook/addon-knobs/register"],
+  stories: ["../slices/**/*.stories.js"],
   webpackFinal: async (sbWebpack, { configType }) => {
     const nuxtWebpack = await getWebpackConfig("client", {
       for: process.env.NODE_ENV === "production" ? "build" : "dev"
@@ -15,10 +16,15 @@ module.exports = {
       bail: sbWebpack.bail,
       module: {
         rules: [
+          {
+            test: /\.(stories|story)\.[tj]sx?$/,
+            loader: require.resolve("@storybook/source-loader"),
+            exclude: [/node_modules/],
+            enforce: "pre"
+          },
           ...nuxtWebpack.module.rules.map(el => {
             const reg = RegExp(el.test);
             if (reg.test(".postcss") || reg.test(".css")) {
-              console.log(el.oneOf);
               el.oneOf = el.oneOf.map(e => {
                 e.use.push({
                   loader: "postcss-loader",
@@ -34,13 +40,7 @@ module.exports = {
               });
             }
             return el;
-          }),
-          {
-            test: /\.(stories|story)\.[tj]sx?$/,
-            loader: require.resolve('@storybook/source-loader'),
-            exclude: [/node_modules/],
-            enforce: 'pre',
-          }
+          })
         ]
       },
       plugins: sbWebpack.plugins,

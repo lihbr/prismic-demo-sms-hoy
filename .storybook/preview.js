@@ -1,15 +1,20 @@
 import Vue from "vue";
-import { configure } from "@storybook/vue";
 import "~/assets/css/style.css";
 
 // Nuxt
 Vue.component("nuxt-link", {
-  props: ["to"],
+  props: {
+    to: {
+      type: String,
+      default: ""
+    }
+  },
   methods: {
     log() {
       action("link target")(this.to);
     }
   },
+  // eslint-disable-next-line
   template: "<a href=\"#\" @click.prevent=\"log()\"><slot>NuxtLink</slot></a>"
 });
 
@@ -30,5 +35,3 @@ Vue.prototype.$prismic = {
       : "";
   }
 };
-
-configure(require.context("../slices", true, /\.stories\.js$/), module);
