@@ -167,7 +167,6 @@ module.exports = async () => {
      ** Build
      */
     build: {
-      extractCSS: !env.DEV,
       html: {
         minify: {
           minifyCSS: false,

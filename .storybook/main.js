@@ -34,10 +34,16 @@ module.exports = {
               });
             }
             return el;
-          })
+          }),
+          {
+            test: /\.(stories|story)\.[tj]sx?$/,
+            loader: require.resolve('@storybook/source-loader'),
+            exclude: [/node_modules/],
+            enforce: 'pre',
+          }
         ]
       },
-      plugins: [...sbWebpack.plugins],
+      plugins: sbWebpack.plugins,
       resolve: {
         extensions: nuxtWebpack.resolve.extensions,
         modules: nuxtWebpack.resolve.modules,

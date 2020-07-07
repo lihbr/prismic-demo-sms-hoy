@@ -4,6 +4,7 @@ HOY with [Slice Machine](https://slicemachine.dev)
 
 <!-- Place badges here -->
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a04a474-9a5f-41ab-9bb3-66121fdde06e/deploy-status)](https://app.netlify.com/sites/sms-hoy/deploys)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 [Live here](https://example.com)
