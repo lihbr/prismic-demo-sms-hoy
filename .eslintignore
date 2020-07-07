@@ -4,6 +4,9 @@ static/sw.js
 
 # .gitignore copy
 
+### Storybook ###
+storybook-static
+
 # Created by https://www.toptal.com/developers/gitignore/api/nuxt,yarn,macos,vuejs,linux,nuxtjs,dotenv,windows,visualstudio,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=nuxt,yarn,macos,vuejs,linux,nuxtjs,dotenv,windows,visualstudio,visualstudiocode
 
