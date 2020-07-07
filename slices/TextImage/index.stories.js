@@ -1,4 +1,4 @@
-import { withKnobs, text, color, select } from "@storybook/addon-knobs";
+import { withKnobs, text, color, boolean } from "@storybook/addon-knobs";
 import cloneDeep from "lodash/cloneDeep";
 
 import TextImage from "./";
@@ -22,8 +22,9 @@ export const __Basic = () => ({
         );
         _mock.primary.text[0].text = text("Text", _mock.primary.text[0].text);
         _mock.primary.image.url = text("Image", _mock.primary.image.url);
-        _mock.primary.caption = null;
-        _mock.primary.caption_color = null;
+        _mock.primary.caption = text("Caption", "");
+        _mock.primary.caption_color = color("Color", "");
+        _mock.slice_label = boolean("Inverted?", false) ? "inverted" : null;
 
         return _mock;
       })()
@@ -58,6 +59,7 @@ export const __WithQuote = () => ({
           "Color",
           _mock.primary.caption_color
         );
+        _mock.slice_label = boolean("Inverted?", false) ? "inverted" : null;
 
         return _mock;
       })()
@@ -87,13 +89,9 @@ export const __Inverted = () => ({
         );
         _mock.primary.text[0].text = text("Text", _mock.primary.text[0].text);
         _mock.primary.image.url = text("Image", _mock.primary.image.url);
-        _mock.primary.caption = null;
-        _mock.primary.caption_color = null;
-        _mock.slice_label = select(
-          "Order",
-          ["Default", "Inverted"],
-          "Inverted"
-        );
+        _mock.primary.caption = text("Caption", "");
+        _mock.primary.caption_color = color("Color", "");
+        _mock.slice_label = boolean("Inverted?", true) ? "inverted" : null;
 
         return _mock;
       })()
@@ -117,11 +115,12 @@ export const __NoTitle = () => ({
       default: (() => {
         const _mock = cloneDeep(mock);
 
-        _mock.primary.title = [];
+        _mock.primary.title[0].text = text("Title", "");
         _mock.primary.text[0].text = text("Text", _mock.primary.text[0].text);
         _mock.primary.image.url = text("Image", _mock.primary.image.url);
-        _mock.primary.caption = null;
-        _mock.primary.caption_color = null;
+        _mock.primary.caption = text("Caption", "");
+        _mock.primary.caption_color = color("Color", "");
+        _mock.slice_label = boolean("Inverted?", true) ? "inverted" : null;
 
         return _mock;
       })()

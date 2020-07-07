@@ -37,7 +37,7 @@ export const __NoTitle = () => ({
       default: (() => {
         const _mock = cloneDeep(mock);
 
-        _mock.primary.title = [];
+        _mock.primary.title[0].text = text("Title", "");
         _mock.primary.text[0].text = text("Text", _mock.primary.text[0].text);
 
         return _mock;

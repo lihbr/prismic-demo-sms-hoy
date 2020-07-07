@@ -1,4 +1,10 @@
-import { withKnobs, text, color, select } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  text,
+  boolean,
+  color,
+  select
+} from "@storybook/addon-knobs";
 import cloneDeep from "lodash/cloneDeep";
 
 import InfoCard from "./";
@@ -35,6 +41,7 @@ export const __Basic = () => ({
           ["Shape 1", "Shape 2", "Shape 3"],
           "Shape 1"
         );
+        _mock.slice_label = boolean("Inverted?", false) ? "inverted" : null;
 
         return _mock;
       })()
@@ -77,11 +84,7 @@ export const __Inverted = () => ({
           ["Shape 1", "Shape 2", "Shape 3"],
           "Shape 1"
         );
-        _mock.slice_label = select(
-          "Order",
-          ["Default", "Inverted"],
-          "Inverted"
-        );
+        _mock.slice_label = boolean("Inverted?", true) ? "inverted" : null;
 
         return _mock;
       })()
