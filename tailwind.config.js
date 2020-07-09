@@ -45,6 +45,18 @@ module.exports = {
       },
       white: {
         default: "#ffffff"
+      },
+      purple: {
+        default: "#6232c9"
+      },
+      blue: {
+        default: "#234ee8"
+      },
+      cyan: {
+        default: "#23c4e8"
+      },
+      orange: {
+        default: "#e87b7b"
       }
     },
     fontSize: {

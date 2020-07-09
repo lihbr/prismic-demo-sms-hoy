@@ -1,7 +1,8 @@
 <!-- HEALTH:UNKNOWN __layout__default -->
 <template>
   <div class="__layout__default">
-    <main class="main">
+    <app-header class="fixed z-10 top-0 left-0 w-full" />
+    <main class="main mt-16">
       <nuxt />
     </main>
   </div>
@@ -10,7 +11,12 @@
 <script>
 import objectFitImages from "object-fit-images";
 
+import AppHeader from "~/components/partials/header/Header.vue";
+
 export default {
+  components: {
+    AppHeader
+  },
   computed: {
     detect() {
       return this.$store.state.detect;

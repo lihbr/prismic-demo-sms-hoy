@@ -1,7 +1,19 @@
 export const state = () => ({
-  // TODO: Create default state with empty object / array for cmsGlobal keys
+  partials: {}
 });
 
-export const mutations = {};
+export const mutations = {
+  setPartials(state, partials) {
+    state.partials = partials;
+  }
+};
 
-export const actions = {};
+export const actions = {
+  async load({ commit }) {
+    const partials = (await this.$prismic.api.getSingle("partials")).data;
+
+    commit("setPartials", partials);
+
+    console.log(partials);
+  }
+};

@@ -17,11 +17,12 @@ export const actions = {
     dispatch("load");
     this.$logger.info("Nuxt server init content loaded");
   },
-  load({ state, commit, dispatch }) {
+  async load({ state, commit, dispatch }) {
     if (state.loaded) return;
 
     // Actions performed when generating application
     // dispatch("something");
+    await dispatch("content/load");
 
     // Load finished
     commit("isLoaded");

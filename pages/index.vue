@@ -2,7 +2,7 @@
 <template>
   <div class="__page__home">
     <div class="content">
-      <slice-zone class="sliceZone space-y-8 py-8" :slices="data.body" />
+      <slice-zone class="sliceZone space-y-8 py-20" :slices="data.body" />
     </div>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
   head() {
     const { meta_title, meta_description, meta_image } = this.data;
     return this.$buildHead({
-      title: meta_title || "💐",
+      title: meta_title || "🦜",
       description: meta_description,
       metaImage: {
         og: undefined /* meta_image.url */,
