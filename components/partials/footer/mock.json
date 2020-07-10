@@ -141,7 +141,7 @@
   "footer_footnote": [
     {
       "type": "paragraph",
-      "text": "This demo website is made with Slice Machine, a tool that help you build and maintain website sections.",
+      "text": "This demo website is made with Slice Machine, a tool that helps you build and maintain website sections.",
       "spans": [
         {
           "start": 31,
