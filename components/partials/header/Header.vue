@@ -4,11 +4,15 @@
     class="header h-16 px-2 flex justify-between items-center bg-white"
     :class="{ hasShadow }"
   >
-    <nuxt-link v-if="logo" to="/" class="h-8 lg:h-10 xl:h-12">
-      <prismic-image :field="logo" class="h-full" />
+    <nuxt-link v-if="partials.header_logo" to="/" class="h-8 lg:h-10 xl:h-12">
+      <prismic-image :field="partials.header_logo" class="h-full" />
     </nuxt-link>
     <header-burger v-model="menuOpen" class="block md:hidden" />
-    <header-links :links="navigation" :active="menuOpen" />
+    <header-links
+      v-if="partials.header_navigation"
+      :links="partials.header_navigation"
+      :active="menuOpen"
+    />
   </header>
 </template>
 
@@ -23,6 +27,12 @@ export default {
     HeaderBurger,
     HeaderLinks
   },
+  props: {
+    partials: {
+      type: Object,
+      required: true
+    }
+  },
   data() {
     return {
       scrollPosition: 0,
@@ -30,12 +40,6 @@ export default {
     };
   },
   computed: {
-    logo() {
-      return this.$store.state.content.partials.header_logo;
-    },
-    navigation() {
-      return this.$store.state.content.partials.header_navigation;
-    },
     hasShadow() {
       return this.scrollPosition > 20;
     }

@@ -20,4 +20,9 @@ export default {
 .typographyParagraph::v-deep a {
   text-decoration: underline;
 }
+
+.typographyParagraph::v-deep a:hover {
+  text-decoration-color: theme("colors.cyan.default");
+  @apply text-blue;
+}
 </style>

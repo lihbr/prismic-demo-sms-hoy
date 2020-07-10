@@ -57,6 +57,9 @@ module.exports = {
       },
       orange: {
         default: "#e87b7b"
+      },
+      beige: {
+        default: "#fff5ca"
       }
     },
     fontSize: {
