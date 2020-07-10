@@ -25,7 +25,7 @@ Object.entries(common).forEach(([_, c]) => {
   Vue.component(c.name, c);
 });
 
-Vue.prototype.$endpoint = "https://repoz.prismic.io/api/v2";
+Vue.prototype.$endpoint = "https://repo.prismic.io/api/v2";
 
 Vue.prototype.$prismic = {
   linkResolver() {},
