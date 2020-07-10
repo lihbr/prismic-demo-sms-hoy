@@ -5,7 +5,7 @@ import SimpleText from "./";
 import mock from "./mock.json";
 
 export default {
-  title: "Simple Text",
+  title: "Slices . Simple Text",
   decorators: [withKnobs]
 };
 
@@ -27,7 +27,7 @@ export const __Basic = () => ({
     }
   },
   // eslint-disable-next-line
-  template: "<SimpleText :slice=\"mock\" />"
+  template: "<simple-text :slice=\"mock\" />"
 });
 
 export const __NoTitle = () => ({
@@ -45,5 +45,5 @@ export const __NoTitle = () => ({
     }
   },
   // eslint-disable-next-line
-  template: "<SimpleText :slice=\"mock\" />"
+  template: "<simple-text :slice=\"mock\" />"
 });

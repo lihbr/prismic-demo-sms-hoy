@@ -5,7 +5,7 @@ import TextImage from "./";
 import mock from "./mock.json";
 
 export default {
-  title: "Text Image",
+  title: "Slices . Text Image",
   decorators: [withKnobs]
 };
 
@@ -31,7 +31,7 @@ export const __Basic = () => ({
     }
   },
   // eslint-disable-next-line
-  template: "<TextImage :slice=\"mock\" />"
+  template: "<text-image :slice=\"mock\" />"
 });
 __Basic.story = {
   parameters: {
@@ -66,7 +66,7 @@ export const __WithQuote = () => ({
     }
   },
   // eslint-disable-next-line
-  template: "<TextImage :slice=\"mock\" />"
+  template: "<text-image :slice=\"mock\" />"
 });
 __WithQuote.story = {
   parameters: {
@@ -98,7 +98,7 @@ export const __Inverted = () => ({
     }
   },
   // eslint-disable-next-line
-  template: "<TextImage :slice=\"mock\" />"
+  template: "<text-image :slice=\"mock\" />"
 });
 __Inverted.story = {
   parameters: {
@@ -127,7 +127,7 @@ export const __NoTitle = () => ({
     }
   },
   // eslint-disable-next-line
-  template: "<TextImage :slice=\"mock\" />"
+  template: "<text-image :slice=\"mock\" />"
 });
 __NoTitle.story = {
   parameters: {

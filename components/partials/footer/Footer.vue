@@ -43,6 +43,9 @@ export default {
       type: Object,
       required: true
     }
+  },
+  mounted() {
+    console.log(JSON.stringify(this.partials));
   }
 };
 </script>

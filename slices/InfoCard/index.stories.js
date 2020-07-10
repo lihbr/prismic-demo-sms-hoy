@@ -11,7 +11,7 @@ import InfoCard from "./";
 import mock from "./mock.json";
 
 export default {
-  title: "Info Card",
+  title: "Slices . Info Card",
   decorators: [withKnobs]
 };
 
@@ -48,7 +48,7 @@ export const __Basic = () => ({
     }
   },
   // eslint-disable-next-line
-  template: "<InfoCard :slice=\"mock\" />"
+  template: "<info-card :slice=\"mock\" />"
 });
 __Basic.story = {
   parameters: {
@@ -91,7 +91,7 @@ export const __Inverted = () => ({
     }
   },
   // eslint-disable-next-line
-  template: "<InfoCard :slice=\"mock\" />"
+  template: "<info-card :slice=\"mock\" />"
 });
 __Inverted.story = {
   parameters: {

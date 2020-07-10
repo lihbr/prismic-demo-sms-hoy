@@ -1,8 +1,11 @@
 const { getWebpackConfig } = require("nuxt");
 
 module.exports = {
-  addons: ["@storybook/addon-knobs/register"],
-  stories: ["../slices/**/*.stories.js"],
+  addons: [
+    "@storybook/addon-knobs/register",
+    "@storybook/addon-actions/register"
+  ],
+  stories: ["../slices/**/*.stories.js", "../components/**/*.stories.js"],
   webpackFinal: async (sbWebpack, { configType }) => {
     const nuxtWebpack = await getWebpackConfig("client", {
       for: process.env.NODE_ENV === "production" ? "build" : "dev"
