@@ -30,8 +30,8 @@ export default {
       title: meta_title || "🦜",
       description: meta_description,
       metaImage: {
-        og: undefined /* meta_image.url */,
-        tw: undefined /* meta_image.twitter_variant.url */
+        og: meta_image.url,
+        tw: meta_image.twitter_variant.url
       },
       path: this.$route.path
     });
