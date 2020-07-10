@@ -22,7 +22,6 @@ export const actions = {
 
     // Actions performed when generating application
     // dispatch("something");
-    await dispatch("content/load");
 
     // Load finished
     commit("isLoaded");

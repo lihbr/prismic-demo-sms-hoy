@@ -2,7 +2,7 @@
 <template>
   <div class="__page__home">
     <div class="content">
-      <slice-zone class="sliceZone space-y-8 py-32" type="page" uid="home" />
+      <slice-zone class="sliceZone space-y-8 py-32" :slices="data.body" />
     </div>
   </div>
 </template>

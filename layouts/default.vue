@@ -20,6 +20,9 @@ export default {
     AppHeader,
     AppFooter
   },
+  async middleware({ store }) {
+    await store.dispatch("content/load");
+  },
   computed: {
     detect() {
       return this.$store.state.detect;
