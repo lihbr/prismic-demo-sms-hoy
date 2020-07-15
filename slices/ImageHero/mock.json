@@ -1,0 +1,13 @@
+{
+  "slice_type": "image_hero",
+  "slice_label": null,
+  "items": [],
+  "primary": {
+    "title": [],
+    "description": [],
+    "cta_link": { "link_type": "Any" },
+    "cta_label": null,
+    "image": {},
+    "background": {}
+  }
+}

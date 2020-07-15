@@ -1,0 +1,95 @@
+{
+  "Header": {
+    "header_logo": {
+      "type": "Image",
+      "config": {
+        "label": "Logo",
+        "constraint": {},
+        "thumbnails": []
+      }
+    },
+    "header_navigation": {
+      "type": "Group",
+      "config": {
+        "label": "Navigation",
+        "fields": {
+          "link": {
+            "type": "Link",
+            "config": {
+              "label": "Link",
+              "allowTargetBlank": true
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          },
+          "cta": {
+            "type": "Boolean",
+            "config": {
+              "label": "Is a CTA?",
+              "default_value": false,
+              "placeholder_true": "True",
+              "placeholder_false": "False"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Footer": {
+    "footer_logo": {
+      "type": "Image",
+      "config": {
+        "label": "Logo",
+        "constraint": {},
+        "thumbnails": []
+      }
+    },
+    "footer_motto": {
+      "type": "Text",
+      "config": {
+        "label": "Motto"
+      }
+    },
+    "footer_navigation": {
+      "type": "Group",
+      "config": {
+        "label": "Navigation",
+        "fields": {
+          "link": {
+            "type": "Link",
+            "config": {
+              "label": "Link",
+              "allowTargetBlank": true
+            }
+          },
+          "title": {
+            "type": "Text",
+            "config": {
+              "label": "Title"
+            }
+          }
+        }
+      }
+    },
+    "footer_information": {
+      "type": "StructuredText",
+      "config": {
+        "label": "Information",
+        "single": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true
+      }
+    },
+    "footer_footnote": {
+      "type": "StructuredText",
+      "config": {
+        "label": "Information",
+        "single": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true
+      }
+    }
+  }
+}

@@ -4,5 +4,11 @@
     "name": "Page",
     "repeatable": true,
     "value": "page.json"
+  },
+  {
+    "id": "partials",
+    "name": "Partials",
+    "repeatable": false,
+    "value": "partials.json"
   }
 ]

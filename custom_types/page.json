@@ -143,6 +143,58 @@
               }
             },
             "repeat": {}
+          },
+          "image_hero": {
+            "type": "Slice",
+            "fieldset": "ImageHero Template",
+            "description": "Template model for ImageHero",
+            "icon": "credit_card",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "This is where it all begins...",
+                  "single": "heading1"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "description",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item"
+                }
+              },
+              "cta_link": {
+                "type": "Link",
+                "config": {
+                  "label": "cta_link"
+                }
+              },
+              "cta_label": {
+                "type": "Text",
+                "config": {
+                  "label": "cta_label"
+                }
+              },
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "background": {
+                "type": "Image",
+                "config": {
+                  "label": "background",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
           }
         },
         "labels": {
