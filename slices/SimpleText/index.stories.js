@@ -30,7 +30,7 @@ export const __Basic = () => ({
   template: "<simple-text :slice=\"mock\" />"
 });
 
-export const __NoTitle = () => ({
+export const __WithoutTitle = () => ({
   components: { SimpleText },
   props: {
     mock: {

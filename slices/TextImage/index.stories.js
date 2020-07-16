@@ -108,7 +108,7 @@ __Inverted.story = {
   }
 };
 
-export const __NoTitle = () => ({
+export const __WithoutTitle = () => ({
   components: { TextImage },
   props: {
     mock: {
@@ -129,7 +129,7 @@ export const __NoTitle = () => ({
   // eslint-disable-next-line
   template: "<text-image :slice=\"mock\" />"
 });
-__NoTitle.story = {
+__WithoutTitle.story = {
   parameters: {
     knobs: {
       escapeHTML: false

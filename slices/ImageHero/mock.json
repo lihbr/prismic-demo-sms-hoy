@@ -1,13 +1,50 @@
 {
   "slice_type": "image_hero",
   "slice_label": null,
-  "items": [],
+  "items": [
+    {
+      "link": {
+        "link_type": "Web",
+        "url": "https://en.wikipedia.org/wiki/Atlantic_puffin",
+        "target": "_blank"
+      },
+      "title": "Read more"
+    },
+    {
+      "link": {
+        "link_type": "Web",
+        "url": "https://twitter.com/li_hbr",
+        "target": "_blank"
+      },
+      "title": "About"
+    }
+  ],
   "primary": {
-    "title": [],
-    "description": [],
-    "cta_link": { "link_type": "Any" },
-    "cta_label": null,
-    "image": {},
-    "background": {}
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Have you heard of that bird? Puffin.",
+        "spans": []
+      }
+    ],
+    "text": [
+      {
+        "type": "paragraph",
+        "text": "Atlantic puffins have penguin-like coloring but they sport a colorful beak that has led some to dub them the “sea parrot.”",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": { "width": 2400, "height": 1602 },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.prismic.io/200629-sms-hoy/f0a757f6-770d-4eb8-a08b-f1727f1a58e4_guilherme-romano-KI2KaOeT670-unsplash.jpg?auto=compress,format"
+    },
+    "background": {
+      "dimensions": { "width": 900, "height": 450 },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.prismic.io/200629-sms-hoy/a79bc9d4-0e67-4189-b89c-04c6c5da4ab3_004.svg?auto=compress,format"
+    }
   }
 }

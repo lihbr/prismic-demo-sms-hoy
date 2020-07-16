@@ -1,8 +1,8 @@
 {
   "type": "Slice",
-  "fieldset": "ImageHero Template",
-  "description": "Template model for ImageHero",
-  "icon": "credit_card",
+  "fieldset": "Image Hero",
+  "description": "A hero section with an image",
+  "icon": "wallpaper",
   "display": "list",
   "non-repeat": {
     "title": {
@@ -13,29 +13,18 @@
         "single": "heading1"
       }
     },
-    "description": {
+    "text": {
       "type": "StructuredText",
       "config": {
-        "label": "description",
-        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item"
-      }
-    },
-    "cta_link": {
-      "type": "Link",
-      "config": {
-        "label": "cta_link"
-      }
-    },
-    "cta_label": {
-      "type": "Text",
-      "config": {
-        "label": "cta_label"
+        "label": "Text",
+        "single": "strong, em, hyperlink",
+        "allowTargetBlank": true
       }
     },
     "image": {
       "type": "Image",
       "config": {
-        "label": "image",
+        "label": "Image",
         "constraint": {},
         "thumbnails": []
       }
@@ -43,9 +32,24 @@
     "background": {
       "type": "Image",
       "config": {
-        "label": "background",
+        "label": "Background",
         "constraint": {},
         "thumbnails": []
+      }
+    }
+  },
+  "repeat": {
+    "link": {
+      "type": "Link",
+      "config": {
+        "label": "Link",
+        "allowTargetBlank": true
+      }
+    },
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
       }
     }
   }
