@@ -1,6 +1,13 @@
 <!-- HEALTH:UNKNOWN typography-paragraph -->
 <template>
-  <component :is="tag" class="typographyParagraph text-l sm:text-m lg:text-2xl">
+  <component
+    :is="tag"
+    class="typographyParagraph"
+    :class="{
+      'text-l sm:text-m lg:text-2xl': !big,
+      'text-2xl sm:text-xl lg:text-3xl font-semibold': big
+    }"
+  >
     <slot />
   </component>
 </template>
@@ -11,6 +18,10 @@ export default {
     tag: {
       type: String,
       default: "div"
+    },
+    big: {
+      type: Boolean,
+      default: false
     }
   }
 };

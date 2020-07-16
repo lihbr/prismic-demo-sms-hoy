@@ -76,7 +76,7 @@ module.exports = {
       "5xl": "2.25rem", //  36px
       "6xl": "2.75rem", //  44px*
       "7xl": "3.25rem", //  52px
-      "8xl": "4rem", //     64px
+      "8xl": "4rem", //     64px*
       "9xl": "4.5rem", //   72px
       "10xl": "5rem" //     80px
     },

@@ -11,9 +11,9 @@
         }"
       >
         <div class="px-5 mx-2 sm:mx-0 sm:flex-1 text-center sm:text-left">
-          <heading-h3 v-if="slice.primary.title" class="mb-2">
+          <heading v-if="slice.primary.title" :level="3" class="mb-2">
             {{ $prismic.asText(slice.primary.title) }}
-          </heading-h3>
+          </heading>
           <paragraph class="sm:mb-3">
             <prismic-rich-text :field="slice.primary.text" />
           </paragraph>
@@ -32,13 +32,13 @@
 <script>
 import MediumContainer from "~/components/layouts/MediumContainer.vue";
 
-import HeadingH3 from "~/components/display/typography/HeadingH3.vue";
+import Heading from "~/components/display/typography/Heading.vue";
 import Paragraph from "~/components/display/typography/Paragraph.vue";
 
 export default {
   components: {
     MediumContainer,
-    HeadingH3,
+    Heading,
     Paragraph
   },
   props: {

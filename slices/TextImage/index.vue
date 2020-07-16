@@ -8,9 +8,9 @@
     }"
   >
     <small-container>
-      <heading-h2 v-if="slice.primary.title" class="text-center mb-3">
+      <heading v-if="slice.primary.title" :level="2" class="text-center mb-3">
         {{ $prismic.asText(slice.primary.title) }}
-      </heading-h2>
+      </heading>
       <div
         class="sm:flex sm:-mx-4 items-center"
         :class="{ 'flex-row-reverse': isInverted }"
@@ -45,13 +45,13 @@
 <script>
 import SmallContainer from "~/components/layouts/SmallContainer.vue";
 
-import HeadingH2 from "~/components/display/typography/HeadingH2.vue";
+import Heading from "~/components/display/typography/Heading.vue";
 import Paragraph from "~/components/display/typography/Paragraph.vue";
 
 export default {
   components: {
     SmallContainer,
-    HeadingH2,
+    Heading,
     Paragraph
   },
   props: {
