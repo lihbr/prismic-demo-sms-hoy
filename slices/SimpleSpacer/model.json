@@ -1,0 +1,22 @@
+{
+  "type": "Slice",
+  "fieldset": "Spacer",
+  "description": "A simple spacer to let your content breath",
+  "icon": "space_bar",
+  "display": "list",
+  "non-repeat": {
+    "size": {
+      "type": "Select",
+      "config": {
+        "label": "Size",
+        "default_value": "Medium",
+        "options": [
+          "Medium",
+          "Small",
+          "Large"
+        ]
+      }
+    }
+  },
+  "repeat": {}
+}
