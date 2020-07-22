@@ -1,0 +1,11 @@
+{
+  "slice_type": "newsletter_form",
+  "slice_label": null,
+  "items": [{}],
+  "primary": {
+    "input_placeholder": "hello@ap.org",
+    "subscribe_label": "Subscribe",
+    "form_action": "https://prismic.us17.list-manage.com/subscribe/post?u=ae517a356dacc5a0034b4c26b&amp;id=ec9407a9f4",
+    "honey_pot": "b_ae517a356dacc5a0034b4c26b_ec9407a9f4"
+  }
+}

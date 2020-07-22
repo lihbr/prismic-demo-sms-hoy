@@ -1,0 +1,38 @@
+{
+  "type": "Slice",
+  "fieldset": "Newsletter Form",
+  "description": "Display a simple Mailchimp newsletter form",
+  "icon": "email",
+  "display": "list",
+  "non-repeat": {
+    "input_placeholder": {
+      "type": "Text",
+      "config": {
+        "label": "Input placeholder",
+        "placeholder": "john.doe@example.com"
+      }
+    },
+    "subscribe_label": {
+      "type": "Text",
+      "config": {
+        "label": "Subscribe label",
+        "placeholder": "Subscribe"
+      }
+    },
+    "form_action": {
+      "type": "Text",
+      "config": {
+        "label": "Form action",
+        "placeholder": "Mailchimp form callback, leave empty to use global configuration"
+      }
+    },
+    "honey_pot": {
+      "type": "Text",
+      "config": {
+        "label": "Honey pot ID",
+        "placeholder": "Mailchimp honey pot ID, leave empty to use global configuration"
+      }
+    }
+  },
+  "repeat": {}
+}
