@@ -27,5 +27,5 @@ export const __Basic = () => ({
     }
   },
   // eslint-disable-next-line
-  template: "<SimpleSpacer :slice=\"mock\" class=\"bg-beige\" />"
+  template: "<SimpleSpacer :slice=\"mock\" :style=\"{ background: '#fff5ca' }\" />"
 });
