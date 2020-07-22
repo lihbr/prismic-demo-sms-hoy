@@ -39,7 +39,7 @@ export const __Basic = () => ({
         _mock.primary.background_shape = select(
           "Background shape",
           ["Shape 1", "Shape 2", "Shape 3"],
-          "Shape 1"
+          _mock.primary.background_shape
         );
         _mock.slice_label = boolean("Inverted?", false) ? "inverted" : null;
 
@@ -82,7 +82,7 @@ export const __Inverted = () => ({
         _mock.primary.background_shape = select(
           "Background shape",
           ["Shape 1", "Shape 2", "Shape 3"],
-          "Shape 1"
+          _mock.primary.background_shape
         );
         _mock.slice_label = boolean("Inverted?", true) ? "inverted" : null;
 

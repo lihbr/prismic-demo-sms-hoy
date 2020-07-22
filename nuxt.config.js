@@ -156,6 +156,14 @@ module.exports = async () => {
     env,
 
     /*
+     ** Public runtime config
+     */
+    publicRuntimeConfig: {
+      SM_HOY_MAILCHIMP_FORM_ACTION: "",
+      SM_HOY_MAILCHIMP_HONEY_POT: ""
+    },
+
+    /*
      ** Server configuration
      */
     server: {

@@ -1,11 +1,12 @@
 <!-- HEALTH:UNKNOWN simple-button -->
 <template>
-  <prismic-link
+  <component
+    :is="tag"
     :field="link"
     class="simpleButton text-2xl sm:text-3xl lg:text-4xl font-medium px-5 py-2 rounded-full text-white"
   >
     <slot />
-  </prismic-link>
+  </component>
 </template>
 
 <script>
@@ -18,7 +19,12 @@ export default {
   props: {
     link: {
       type: Object,
-      required: true
+      default: null
+    }
+  },
+  computed: {
+    tag() {
+      return this.link ? "prismic-link" : "button";
     }
   }
 };
@@ -34,8 +40,10 @@ export default {
 }
 
 @screen md {
-  .simpleButton:hover {
+  .simpleButton:hover,
+  .simpleButton:focus {
     box-shadow: 0 0 0 1.5px theme("colors.cyan.default");
+    @apply outline-none;
   }
 }
 </style>

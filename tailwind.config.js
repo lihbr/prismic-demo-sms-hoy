@@ -40,6 +40,7 @@ module.exports = {
       ]
     },
     colors: {
+      transparent: "transparent",
       black: {
         default: "#222222"
       },
