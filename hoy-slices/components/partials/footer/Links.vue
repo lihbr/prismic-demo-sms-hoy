@@ -19,12 +19,7 @@
 </template>
 
 <script>
-// import Component from "~/components/Component.vue";
-
 export default {
-  components: {
-    // Component
-  },
   props: {
     links: {
       type: Array,

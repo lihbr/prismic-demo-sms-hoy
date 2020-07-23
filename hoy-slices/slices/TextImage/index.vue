@@ -43,10 +43,10 @@
 </template>
 
 <script>
-import SmallContainer from "~/components/layouts/SmallContainer.vue";
+import SmallContainer from "../../components/layouts/SmallContainer.vue";
 
-import Heading from "~/components/display/typography/Heading.vue";
-import Paragraph from "~/components/display/typography/Paragraph.vue";
+import Heading from "../../components/display/typography/Heading.vue";
+import Paragraph from "../../components/display/typography/Paragraph.vue";
 
 export default {
   components: {

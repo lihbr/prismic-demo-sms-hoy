@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import HeaderLink from "~/components/partials/header/Link.vue";
+import HeaderLink from "./Link.vue";
 
 export default {
   components: {

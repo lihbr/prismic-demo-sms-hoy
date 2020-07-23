@@ -19,8 +19,8 @@
 <script>
 import throttle from "lodash/throttle";
 
-import HeaderBurger from "~/components/partials/header/Burger.vue";
-import HeaderLinks from "~/components/partials/header/Links.vue";
+import HeaderBurger from "./Burger.vue";
+import HeaderLinks from "./Links.vue";
 
 export default {
   components: {

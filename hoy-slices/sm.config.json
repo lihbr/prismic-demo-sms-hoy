@@ -1,0 +1,10 @@
+{
+  "libraryName": "HOY Slices",
+  "framework": "nuxt",
+  "gitUrl": "https://github.com/lihbr/sms-hoy",
+  "pathToLibrary": "",
+  "dependencies": [],
+  "css": [],
+  "script": [],
+  "devDependencies": []
+}

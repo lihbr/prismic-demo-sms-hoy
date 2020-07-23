@@ -1,0 +1,33 @@
+{
+  "name": "hoy-slices",
+  "version": "0.1.0",
+  "description": "HOY Slices library for Slice Machine",
+  "author": "lihbr <hello@lihbr.com> (https://lihbr.com)",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "node ./node_modules/sm-commons/scripts/bundle"
+  },
+  "engines": {
+    "node": ">=10.16.3",
+    "yarn": ">=1.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lihbr/sms-hoy.git"
+  },
+  "keywords": [
+    "Nuxtjs",
+    "Vuejs",
+    "Prismic",
+    "slices"
+  ],
+  "bugs": {
+    "url": "https://github.com/lihbr/sms-hoy/issues"
+  },
+  "homepage": "https://github.com/lihbr/sms-hoy#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "sm-commons": "0.0.22"
+  }
+}

@@ -10,12 +10,7 @@
 </template>
 
 <script>
-// import Component from "~/components/Component.vue";
-
 export default {
-  components: {
-    // Component
-  },
   props: {
     link: {
       type: Object,

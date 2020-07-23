@@ -27,10 +27,9 @@
 </template>
 
 <script>
-import SmallContainer from "~/components/layouts/SmallContainer.vue";
-
-import FooterLinks from "~/components/partials/footer/Links.vue";
-import Paragraph from "~/components/display/typography/Paragraph.vue";
+import SmallContainer from "../../layouts/SmallContainer.vue";
+import FooterLinks from "./Links.vue";
+import Paragraph from "../../display/typography/Paragraph.vue";
 
 export default {
   components: {

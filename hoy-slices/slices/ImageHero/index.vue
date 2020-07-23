@@ -38,13 +38,13 @@
 </template>
 
 <script>
-import SmallContainer from "~/components/layouts/SmallContainer.vue";
-import MediumContainer from "~/components/layouts/MediumContainer.vue";
+import SmallContainer from "../../components/layouts/SmallContainer.vue";
+import MediumContainer from "../../components/layouts/MediumContainer.vue";
 
-import Heading from "~/components/display/typography/Heading.vue";
-import Paragraph from "~/components/display/typography/Paragraph.vue";
+import Heading from "../../components/display/typography/Heading.vue";
+import Paragraph from "../../components/display/typography/Paragraph.vue";
 
-import SimpleButton from "~/components/controls/SimpleButton.vue";
+import SimpleButton from "../../components/controls/SimpleButton.vue";
 
 export default {
   components: {
