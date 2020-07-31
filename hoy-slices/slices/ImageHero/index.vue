@@ -2,7 +2,11 @@
 <template>
   <div class="imageHero pt-6 pb-12 sm:pt-12 overflow-hidden">
     <small-container class="mb-12 text-center">
-      <heading v-if="slice.primary.title" :level="1" class="mb-4">
+      <heading
+        v-if="slice.primary.title && $prismic.asText(slice.primary.title)"
+        :level="1"
+        class="mb-4"
+      >
         {{ $prismic.asText(slice.primary.title) }}
       </heading>
       <paragraph big>
@@ -31,6 +35,7 @@
         <prismic-image
           class="object-contain w-full h-full"
           :field="slice.primary.background"
+          aria-hidden="true"
         />
       </figure>
     </medium-container>

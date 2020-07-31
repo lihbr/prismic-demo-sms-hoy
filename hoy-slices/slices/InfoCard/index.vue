@@ -11,7 +11,11 @@
         }"
       >
         <div class="px-5 mx-2 sm:mx-0 sm:flex-1 text-center sm:text-left">
-          <heading v-if="slice.primary.title" :level="3" class="mb-2">
+          <heading
+            v-if="slice.primary.title && $prismic.asText(slice.primary.title)"
+            :level="3"
+            class="mb-2"
+          >
             {{ $prismic.asText(slice.primary.title) }}
           </heading>
           <paragraph class="sm:mb-3">

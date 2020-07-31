@@ -2,7 +2,11 @@
 <template>
   <div class="simpleText">
     <small-container>
-      <heading v-if="slice.primary.title" :level="2" class="text-center mb-3">
+      <heading
+        v-if="slice.primary.title && $prismic.asText(slice.primary.title)"
+        :level="2"
+        class="text-center mb-3"
+      >
         {{ $prismic.asText(slice.primary.title) }}
       </heading>
       <paragraph class="text-center">

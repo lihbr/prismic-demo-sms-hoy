@@ -6,6 +6,7 @@
         v-if="partials.footer_logo"
         :field="partials.footer_logo"
         class="w-16 mx-auto"
+        aria-hidden="true"
       />
       <paragraph class="font-bold text-center mb-4">
         {{ partials.footer_motto }}

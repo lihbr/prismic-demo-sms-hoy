@@ -4,7 +4,12 @@
     class="header h-16 px-2 flex justify-between items-center bg-white"
     :class="{ hasShadow }"
   >
-    <nuxt-link v-if="partials.header_logo" to="/" class="h-8 lg:h-10 xl:h-12">
+    <nuxt-link
+      v-if="partials.header_logo"
+      to="/"
+      class="h-8 lg:h-10 xl:h-12"
+      aria-label="home"
+    >
       <prismic-image :field="partials.header_logo" class="h-full" />
     </nuxt-link>
     <header-burger v-model="menuOpen" class="block md:hidden" />
