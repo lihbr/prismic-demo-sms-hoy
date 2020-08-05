@@ -121,24 +121,18 @@ module.exports = async () => {
                 path: "/:uid"
               }
             ]
-          }
+          },
+          disableGenerator: true
         }
       ],
       "nuxt-sm"
     ],
 
     /*
-     ** Export
+     ** Generate
      */
-    export: {
-      fallback: true,
-      crawler: false,
-      routes: [
-        {
-          route: "/",
-          payload: {}
-        }
-      ]
+    generate: {
+      fallback: true
     },
 
     /*

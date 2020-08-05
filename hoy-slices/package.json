@@ -1,6 +1,6 @@
 {
   "name": "hoy-slices",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "HOY Slices library for Slice Machine",
   "author": "lihbr <hello@lihbr.com> (https://lihbr.com)",
   "license": "SEE LICENSE IN LICENSE",
@@ -27,9 +27,9 @@
   },
   "homepage": "https://github.com/lihbr/sms-hoy#readme",
   "dependencies": {
-    "lodash.defaultsdeep": "4.6.1"
+    "defu": "3.1.0"
   },
   "devDependencies": {
-    "sm-commons": "0.0.22"
+    "sm-commons": "0.0.23"
   }
 }

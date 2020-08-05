@@ -1,8 +1,8 @@
-const defaultsDeep = require("lodash.defaultsdeep");
+const defu = require("defu");
 
 const hoyTailwindConfig = require("./tailwind.config.js");
 
 const withHOY = userTailwindConfig =>
-  defaultsDeep(userTailwindConfig, hoyTailwindConfig);
+  defu.arrayFn(userTailwindConfig, hoyTailwindConfig);
 
 module.exports = withHOY;
