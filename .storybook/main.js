@@ -34,7 +34,7 @@ module.exports = {
                   options: {
                     ident: "postcss",
                     plugins: [
-                      require("tailwindcss")("./tailwind.config.js"),
+                      require("tailwindcss")("./.storybook/tailwind.config.js"),
                       require("autoprefixer")
                     ]
                   }

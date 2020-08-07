@@ -22,6 +22,13 @@ module.exports = async () => {
     modern: "client",
 
     /*
+     ** Generate
+     */
+    generate: {
+      fallback: true
+    },
+
+    /*
      ** Head of the page, handled by head module
      */
     head: {},
@@ -112,7 +119,7 @@ module.exports = async () => {
         "@nuxtjs/tailwindcss",
         {
           configPath: "~/tailwind.config.js",
-          cssPath: "~/assets/css/style.css"
+          cssPath: "~/assets/css/tailwind.css"
         }
       ],
       [
@@ -133,13 +140,6 @@ module.exports = async () => {
       "nuxt-sm",
       "hoy-slices/module"
     ],
-
-    /*
-     ** Generate
-     */
-    generate: {
-      fallback: true
-    },
 
     /*
      ** Sitemap

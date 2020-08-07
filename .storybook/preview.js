@@ -1,6 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import Vue from "vue";
 
+import "~/assets/css/tailwind.css";
 import "~/assets/css/style.css";
 import { common } from "@prismicio/vue/components";
 
