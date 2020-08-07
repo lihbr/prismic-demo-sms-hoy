@@ -1,6 +1,6 @@
 {
   "name": "hoy-slices",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "HOY Slices library for Slice Machine",
   "author": "lihbr <hello@lihbr.com> (https://lihbr.com)",
   "license": "SEE LICENSE IN LICENSE",
@@ -14,7 +14,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lihbr/sms-hoy.git"
+    "url": "git+https://github.com/lihbr/sms-hoy.git",
+    "directory": "hoy-slices"
   },
   "keywords": [
     "Nuxtjs",

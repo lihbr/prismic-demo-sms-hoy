@@ -5,6 +5,9 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
+  purge: {
+    content: ["node_modules/hoy-slices/**/*.vue"]
+  },
   theme: {
     screens: {
       sm: "640px",

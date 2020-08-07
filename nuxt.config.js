@@ -17,6 +17,11 @@ module.exports = async () => {
     target: "static",
 
     /*
+     ** Build target
+     */
+    modern: "client",
+
+    /*
      ** Head of the page, handled by head module
      */
     head: {},
@@ -106,7 +111,7 @@ module.exports = async () => {
       [
         "@nuxtjs/tailwindcss",
         {
-          configPath: "~~/tailwind.config.js",
+          configPath: "~/tailwind.config.js",
           cssPath: "~/assets/css/style.css"
         }
       ],
@@ -125,7 +130,8 @@ module.exports = async () => {
           disableGenerator: true
         }
       ],
-      "nuxt-sm"
+      "nuxt-sm",
+      "hoy-slices/module"
     ],
 
     /*
