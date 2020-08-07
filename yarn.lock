@@ -7084,10 +7084,10 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
   integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
 
-hoy-slices@0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/hoy-slices/-/hoy-slices-0.2.2.tgz#081f37ae29b715207fe54929e0cf0c163749682e"
-  integrity sha512-TTkqvpURCAvXbcyLKuPv0vQmump/stXKEki0wJyl4/3QszI67jKvx7mbVJIEmUgfXPFqOCJnEp7eqzjJiDSy+g==
+hoy-slices@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/hoy-slices/-/hoy-slices-0.3.0.tgz#00c1100cca8b22cfdf92c79aa9b988efc388c609"
+  integrity sha512-VWsnsE/tzknQ8bFurTDSCIUvnbY3AU9qZ9rC2CdZ3a0HVNJIJM3zf+Y9O7HEUEJaihs/GmwhTLmot8kPWFOykw==
   dependencies:
     defu "3.1.0"
 
