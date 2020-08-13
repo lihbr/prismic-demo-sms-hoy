@@ -31,7 +31,10 @@
           :field="slice.primary.image"
         />
       </figure>
-      <figure class="background absolute pointer-events-none inset-0">
+      <figure
+        v-if="slice.primary.background && slice.primary.background.url"
+        class="background absolute pointer-events-none inset-0"
+      >
         <prismic-image
           class="object-contain w-full h-full"
           :field="slice.primary.background"
