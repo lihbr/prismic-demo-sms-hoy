@@ -29,7 +29,7 @@
   "dependencies": {
     "@prismicio/vue": "2.0.7",
     "dotenv": "8.2.0",
-    "hoy-slices": "0.3.1",
+    "hoy-slices": "0.4.0",
     "is-mobile": "2.2.2",
     "lodash": "4.17.20",
     "nuxt": "2.14.3",
