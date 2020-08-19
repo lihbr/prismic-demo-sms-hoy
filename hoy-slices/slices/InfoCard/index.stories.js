@@ -11,7 +11,7 @@ import InfoCard from "./";
 import mock from "./mock.json";
 
 export default {
-  title: "Slices . Info Card",
+  title: "Slices/Info Card",
   decorators: [withKnobs]
 };
 

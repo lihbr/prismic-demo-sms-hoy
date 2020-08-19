@@ -2,7 +2,7 @@ import AppFooter from "./Footer.vue";
 import mock from "./mock.json";
 
 export default {
-  title: "Components . Partials"
+  title: "Components/Partials"
 };
 
 export const __Footer = () => ({

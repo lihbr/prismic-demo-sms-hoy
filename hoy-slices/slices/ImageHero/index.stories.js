@@ -5,7 +5,7 @@ import ImageHero from "./";
 import mock from "./mock.json";
 
 export default {
-  title: "Slices . Image Hero",
+  title: "Slices/Image Hero",
   decorators: [withKnobs]
 };
 

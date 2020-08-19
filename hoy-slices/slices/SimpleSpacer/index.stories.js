@@ -5,7 +5,7 @@ import SimpleSpacer from "./";
 import mock from "./mock.json";
 
 export default {
-  title: "Slices . Simple Spacer",
+  title: "Slices/Simple Spacer",
   decorators: [withKnobs]
 };
 

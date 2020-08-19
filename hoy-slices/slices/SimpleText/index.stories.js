@@ -5,7 +5,7 @@ import SimpleText from "./";
 import mock from "./mock.json";
 
 export default {
-  title: "Slices . Simple Text",
+  title: "Slices/Simple Text",
   decorators: [withKnobs]
 };
 
@@ -29,6 +29,13 @@ export const __Basic = () => ({
   // eslint-disable-next-line
   template: "<simple-text :slice=\"mock\" />"
 });
+__Basic.story = {
+  parameters: {
+    knobs: {
+      escapeHTML: false
+    }
+  }
+};
 
 export const __WithoutTitle = () => ({
   components: { SimpleText },
@@ -47,3 +54,10 @@ export const __WithoutTitle = () => ({
   // eslint-disable-next-line
   template: "<simple-text :slice=\"mock\" />"
 });
+__WithoutTitle.story = {
+  parameters: {
+    knobs: {
+      escapeHTML: false
+    }
+  }
+};

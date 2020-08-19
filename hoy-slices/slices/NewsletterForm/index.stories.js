@@ -5,7 +5,7 @@ import NewsletterForm from "./";
 import mock from "./mock.json";
 
 export default {
-  title: "Slices . Newsletter Form",
+  title: "Slices/Newsletter Form",
   decorators: [withKnobs]
 };
 

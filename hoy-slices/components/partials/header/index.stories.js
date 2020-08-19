@@ -2,7 +2,7 @@ import AppHeader from "./Header.vue";
 import mock from "./mock.json";
 
 export default {
-  title: "Components . Partials"
+  title: "Components/Partials"
 };
 
 export const __Header = () => ({

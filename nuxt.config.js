@@ -19,7 +19,7 @@ module.exports = async () => {
     /*
      ** Build target
      */
-    modern: "client",
+    modern: env.DEV ? false : "client",
 
     /*
      ** Generate
@@ -92,17 +92,19 @@ module.exports = async () => {
         "@nuxtjs/pwa",
         {
           workbox: {
+            clientsClaim: false,
             offlineAnalytics: !!env.GTM_ID && true,
             // Register image CDN here
             runtimeCaching: [
-              // {
-              //   urlPattern: `https://example.com/.*`
-              // }
+              {
+                urlPattern: `https://images.prismic.io/${process.env.PRISMIC_REPO}/.*`,
+                handler: "networkFirst"
+              }
             ]
           },
           meta: false,
           icon: {
-            accessibleIcons: false
+            plugin: false
           },
           manifest: {
             // display: "browser", // disable "Add to Home Screen" button
@@ -149,6 +151,19 @@ module.exports = async () => {
       gzip: true,
       exclude: []
     },
+
+    /*
+     ** Storybook
+     */
+    storybook: {
+      addons: ["@storybook/addon-knobs/register"],
+      stories: ["~/hoy-slices/**/*.stories.js"]
+    },
+
+    /*
+     ** Ignore
+     */
+    ignore: ["**/*.stories.js"],
 
     /*
      ** Env

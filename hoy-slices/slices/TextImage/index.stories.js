@@ -5,7 +5,7 @@ import TextImage from "./";
 import mock from "./mock.json";
 
 export default {
-  title: "Slices . Text Image",
+  title: "Slices/Text Image",
   decorators: [withKnobs]
 };
 
