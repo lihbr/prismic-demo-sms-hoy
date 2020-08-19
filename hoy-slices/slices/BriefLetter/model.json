@@ -1,0 +1,19 @@
+{
+  "type": "Slice",
+  "fieldset": "Brief Letter",
+  "description": "Rich text in a letter format",
+  "icon": "description",
+  "display": "list",
+  "non-repeat": {
+    "text": {
+      "type": "StructuredText",
+      "config": {
+        "label": "Text",
+        "placeholder": "Letter content...",
+        "multi": "paragraph, heading2, heading3, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "allowTargetBlank": true
+      }
+    }
+  },
+  "repeat": {}
+}
