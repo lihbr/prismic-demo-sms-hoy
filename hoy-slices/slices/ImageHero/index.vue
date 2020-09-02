@@ -1,6 +1,6 @@
 <!-- HEALTH:UNKNOWN image-hero -->
 <template>
-  <div class="imageHero pt-6 pb-12 sm:pt-12 overflow-hidden">
+  <div class="imageHero pb-12 overflow-hidden">
     <small-container class="mb-12 text-center">
       <heading
         v-if="slice.primary.title && $prismic.asText(slice.primary.title)"
