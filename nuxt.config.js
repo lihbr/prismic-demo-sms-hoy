@@ -51,7 +51,14 @@ module.exports = async () => {
     /*
      ** Nuxt.js modules
      */
-    modules: [],
+    modules: [
+      [
+        "~/modules/cms-settings",
+        {
+          endpoint: "https://200629-sms-hoy.prismic.io/api/v2"
+        }
+      ]
+    ],
 
     /*
      ** Nuxt.js build modules
@@ -78,16 +85,7 @@ module.exports = async () => {
       "@nuxtjs/global-components",
       "@nuxtjs/sitemap",
       ["@nuxtjs/netlify-files", { existingFilesDirectory: __dirname }],
-      [
-        "@nuxtjs/gtm",
-        {
-          id: env.GTM_ID,
-          pageTracking: true,
-          pageViewEventName: "nuxtRoute",
-          respectDoNotTrack: env.GTM_FRIENDLY,
-          enabled: !env.DEV
-        }
-      ],
+      "@nuxtjs/google-analytics",
       [
         "@nuxtjs/pwa",
         {
