@@ -47,7 +47,7 @@
     "@nuxtjs/global-components": "0.6.1",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/netlify-files": "1.2.0",
-    "@nuxtjs/prismic": "1.2.3",
+    "@nuxtjs/prismic": "1.2.4",
     "@nuxtjs/pwa": "3.0.2",
     "@nuxtjs/sitemap": "2.4.0",
     "@nuxtjs/storybook": "2.2.0",
