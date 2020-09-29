@@ -46,7 +46,7 @@ module.exports = async () => {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: ["~/plugins/logger", "~/plugins/filters"],
+    plugins: ["~/plugins/logger", "~/plugins/filters", "hoy-slices/plugin"],
 
     /*
      ** Nuxt.js modules

@@ -1,6 +1,6 @@
 {
   "name": "hoy-slices",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "HOY Slices library for Slice Machine",
   "author": "lihbr <hello@lihbr.com> (https://lihbr.com)",
   "license": "SEE LICENSE IN LICENSE",
@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/lihbr/sms-hoy#readme",
   "dependencies": {
-    "defu": "3.1.0"
+    "defu": "3.1.0",
+    "vue-imgix": "2.8.1"
   },
   "devDependencies": {
     "sm-commons": "0.0.23"

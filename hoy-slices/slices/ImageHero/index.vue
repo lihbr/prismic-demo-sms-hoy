@@ -26,7 +26,7 @@
     </small-container>
     <medium-container class="relative">
       <figure class="rounded-xl shadow-xl overflow-hidden">
-        <prismic-image
+        <responsive-image
           class="object-cover w-full"
           :field="slice.primary.image"
         />
@@ -53,6 +53,7 @@ import Heading from "../../components/display/typography/Heading.vue";
 import Paragraph from "../../components/display/typography/Paragraph.vue";
 
 import SimpleButton from "../../components/controls/SimpleButton.vue";
+import ResponsiveImage from "../../components/controls/ResponsiveImage.vue";
 
 export default {
   components: {
@@ -60,7 +61,8 @@ export default {
     MediumContainer,
     Heading,
     Paragraph,
-    SimpleButton
+    SimpleButton,
+    ResponsiveImage
   },
   props: {
     slice: {
