@@ -22,11 +22,6 @@ export default {
 
     return { data };
   },
-  mounted() {
-    // console.log(JSON.stringify(this.data.body));
-
-    this.$store.dispatch("pageChanged");
-  },
   head() {
     const { meta_title, meta_description, meta_image } = this.data;
     return this.$buildHead({
@@ -38,6 +33,9 @@ export default {
       },
       path: this.$route.path
     });
+  },
+  mounted() {
+    this.$store.dispatch("pageChanged");
   }
 };
 </script>

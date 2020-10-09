@@ -1,6 +1,6 @@
 <!-- HEALTH:UNKNOWN __page__error -->
 <template>
-  <div class="__page__error">
+  <div class="__page__error py-32 text-center">
     <h1>{{ code }}</h1>
     <h2>{{ message | uc_first }}</h2>
     <smart-link class="underline" href="/" :external="$route.path === '/'">
@@ -24,6 +24,14 @@ export default {
       })
     }
   },
+  head() {
+    return this.$buildHead({
+      title: `${this.code}` || "💐",
+      description: this.$options.filters.uc_first(this.message),
+      metaImage: { og: undefined, tw: undefined },
+      path: this.$route.path
+    });
+  },
   computed: {
     code() {
       return this.error.statusCode;
@@ -34,14 +42,6 @@ export default {
   },
   mounted() {
     this.$store.dispatch("pageChanged");
-  },
-  head() {
-    return this.$buildHead({
-      title: `${this.code}` || "💐",
-      description: this.$options.filters.uc_first(this.message),
-      metaImage: { og: undefined, tw: undefined },
-      path: this.$route.path
-    });
   }
 };
 </script>
