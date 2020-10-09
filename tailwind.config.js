@@ -5,6 +5,9 @@ module.exports = {
   separator: ":",
   theme: {},
   variants: {},
+  purge: {
+    content: ["app/prismic/**/*.vue"]
+  },
   plugins: [
     ({ addBase, addUtilities, theme }) => {
       const objectFitUtilities = {
