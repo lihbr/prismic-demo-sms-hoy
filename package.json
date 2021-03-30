@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@prismicio/vue": "2.0.11",
+    "core-js": "3.9.1",
     "dotenv": "8.2.0",
     "hoy-slices": "0.5.0",
     "is-mobile": "3.0.0",
@@ -53,8 +54,9 @@
     "@nuxtjs/sitemap": "2.4.0",
     "@nuxtjs/storybook": "3.3.1",
     "@nuxtjs/tailwindcss": "4.0.2",
-    "@storybook/addon-actions": "6.2.0",
-    "@storybook/addon-knobs": "6.2.0",
+    "@storybook/addon-actions": "6.1.21",
+    "@storybook/addon-knobs": "6.1.21",
+    "@storybook/vue": "6.1.21",
     "babel-eslint": "10.1.0",
     "eslint": "7.23.0",
     "eslint-config-prettier": "8.1.0",
@@ -64,7 +66,9 @@
     "fibers": "5.0.0",
     "husky": "4.3.8",
     "nuxt-sm": "0.0.6",
+    "postcss-nested": "5.0.5",
     "prettier": "2.2.1",
-    "shx": "0.3.3"
+    "shx": "0.3.3",
+    "vue-loader": "15.9.6"
   }
 }
