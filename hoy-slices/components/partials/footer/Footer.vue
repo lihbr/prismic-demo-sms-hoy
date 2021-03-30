@@ -52,7 +52,7 @@ export default {
   @apply underline;
 }
 .footer .footnote::v-deep a:hover {
-  text-decoration-color: theme("colors.cyan.default");
+  text-decoration-color: theme("colors.cyan.DEFAULT");
   @apply text-blue;
 }
 </style>

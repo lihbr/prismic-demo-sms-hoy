@@ -29,25 +29,25 @@ module.exports = {
     colors: {
       transparent: "transparent",
       black: {
-        default: "#222222"
+        DEFAULT: "#222222"
       },
       white: {
-        default: "#ffffff"
+        DEFAULT: "#ffffff"
       },
       purple: {
-        default: "#6232c9"
+        DEFAULT: "#6232c9"
       },
       blue: {
-        default: "#234ee8"
+        DEFAULT: "#234ee8"
       },
       cyan: {
-        default: "#23c4e8"
+        DEFAULT: "#23c4e8"
       },
       orange: {
-        default: "#e87b7b"
+        DEFAULT: "#e87b7b"
       },
       beige: {
-        default: "#fff5ca"
+        DEFAULT: "#fff5ca"
       }
     },
     fontSize: {

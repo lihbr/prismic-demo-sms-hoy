@@ -1,12 +1,11 @@
 module.exports = {
-  target: "ie11",
   prefix: "",
   important: false,
   separator: ":",
   theme: {},
   variants: {},
   purge: {
-    content: ["app/prismic/**/*.vue"]
+    content: ["app/prismic/**/*.vue", "hoy-slices/**/*.vue"]
   },
   plugins: [
     ({ addBase, addUtilities, theme }) => {

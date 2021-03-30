@@ -41,16 +41,16 @@ export default {
 .footerLinks .link {
   background: linear-gradient(
     90deg,
-    theme("colors.beige.default") 0%,
-    theme("colors.beige.default") 100%
+    theme("colors.beige.DEFAULT") 0%,
+    theme("colors.beige.DEFAULT") 100%
   );
 }
 
 .footerLinks .link:hover {
   background: linear-gradient(
     90deg,
-    theme("colors.beige.default") 0%,
-    theme("colors.orange.default") 600%
+    theme("colors.beige.DEFAULT") 0%,
+    theme("colors.orange.DEFAULT") 600%
   );
 }
 </style>

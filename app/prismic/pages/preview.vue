@@ -32,9 +32,7 @@
         </svg>
       </picture>
       <div class="sm:self-center sm:flex-1 mt-5 sm:ml-5 sm:mt-0 space-y-2">
-        <heading :level="3">
-          Prismic Preview is Loading 🎉
-        </heading>
+        <heading :level="3">Prismic Preview is Loading 🎉</heading>
         <blockquote
           v-if="motd.message"
           class="text-blue text-center sm:text-right"

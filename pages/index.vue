@@ -4,7 +4,8 @@
     <div class="content">
       <slice-zone
         class="sliceZone space-y-8 py-32 sm:pt-48"
-        :slices="data.body"
+        type="page"
+        uid="home"
       />
     </div>
   </div>

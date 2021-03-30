@@ -18,7 +18,7 @@
           title="email address"
           required
         />
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <div style="position: absolute; left: -5000px" aria-hidden="true">
           <input type="text" :name="honeyPot" tabindex="-1" value="" />
         </div>
         <simple-button
@@ -77,6 +77,6 @@ export default {
 .newsletterForm input:-webkit-autofill,
 .newsletterForm input:-webkit-autofill:hover,
 .newsletterForm input:-webkit-autofill:focus {
-  box-shadow: 0 0 0px 100px inset theme("colors.white.default") !important;
+  box-shadow: 0 0 0px 100px inset theme("colors.white.DEFAULT") !important;
 }
 </style>

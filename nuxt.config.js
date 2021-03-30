@@ -7,11 +7,6 @@ module.exports = async () => {
 
   return {
     /*
-     ** Application mode
-     */
-    mode: "universal",
-
-    /*
      ** Application target
      */
     target: "static",
@@ -46,7 +41,7 @@ module.exports = async () => {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: ["~/plugins/logger", "~/plugins/filters", "hoy-slices/plugin"],
+    plugins: ["~/plugins/logger", "~/plugins/filters", "~/hoy-slices/plugin"],
 
     /*
      ** Nuxt.js modules
@@ -138,7 +133,7 @@ module.exports = async () => {
         }
       ],
       "nuxt-sm",
-      "hoy-slices/module"
+      "~/hoy-slices/module"
     ],
 
     /*

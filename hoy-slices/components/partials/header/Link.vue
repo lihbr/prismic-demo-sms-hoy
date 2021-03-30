@@ -30,16 +30,16 @@ export default {
 .headerLink.link {
   background: linear-gradient(
     90deg,
-    theme("colors.purple.default") 0%,
-    theme("colors.orange.default") 100%
+    theme("colors.purple.DEFAULT") 0%,
+    theme("colors.orange.DEFAULT") 100%
   );
 }
 
 .headerLink.cta {
   background: linear-gradient(
     90deg,
-    theme("colors.blue.default") 0%,
-    theme("colors.cyan.default") 200%
+    theme("colors.blue.DEFAULT") 0%,
+    theme("colors.cyan.DEFAULT") 200%
   );
 }
 
@@ -49,11 +49,11 @@ export default {
   }
 
   .headerLink.link:hover {
-    text-decoration-color: theme("colors.cyan.default");
+    text-decoration-color: theme("colors.cyan.DEFAULT");
   }
 
   .headerLink.cta:hover {
-    box-shadow: 0 0 0 1.5px theme("colors.cyan.default");
+    box-shadow: 0 0 0 1.5px theme("colors.cyan.DEFAULT");
   }
 }
 </style>

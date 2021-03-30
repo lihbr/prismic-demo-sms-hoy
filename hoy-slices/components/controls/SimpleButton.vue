@@ -29,15 +29,15 @@ export default {
 .simpleButton {
   background: linear-gradient(
     90deg,
-    theme("colors.blue.default") 0%,
-    theme("colors.cyan.default") 200%
+    theme("colors.blue.DEFAULT") 0%,
+    theme("colors.cyan.DEFAULT") 200%
   );
 }
 
 @screen md {
   .simpleButton:hover,
   .simpleButton:focus {
-    box-shadow: 0 0 0 1.5px theme("colors.cyan.default");
+    box-shadow: 0 0 0 1.5px theme("colors.cyan.DEFAULT");
     @apply outline-none;
   }
 }

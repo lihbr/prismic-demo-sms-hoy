@@ -33,7 +33,7 @@ export default {
 }
 
 .typographyParagraph::v-deep a:hover {
-  text-decoration-color: theme("colors.cyan.default");
+  text-decoration-color: theme("colors.cyan.DEFAULT");
   @apply text-blue;
 }
 
