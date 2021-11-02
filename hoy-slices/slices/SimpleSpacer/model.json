@@ -1,22 +1,35 @@
 {
-  "type": "Slice",
-  "fieldset": "Spacer",
-  "description": "A simple spacer to let your content breath",
-  "icon": "space_bar",
-  "display": "list",
-  "non-repeat": {
-    "size": {
-      "type": "Select",
-      "config": {
-        "label": "Size",
-        "default_value": "Medium",
-        "options": [
-          "Medium",
-          "Small",
-          "Large"
-        ]
-      }
+  "id": "simple_spacer",
+  "type": "SharedSlice",
+  "name": "SimpleSpacer",
+  "description": "Spacer",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25j",
+      "description": "Spacer",
+      "primary": {},
+      "items": {}
+    },
+    {
+      "id": "small",
+      "name": "Small",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25j",
+      "description": "Spacer",
+      "primary": {},
+      "items": {}
+    },
+    {
+      "id": "large",
+      "name": "Large",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25j",
+      "description": "Spacer",
+      "primary": {},
+      "items": {}
     }
-  },
-  "repeat": {}
+  ]
 }

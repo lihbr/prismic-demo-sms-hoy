@@ -1,60 +1,122 @@
 {
-  "type": "Slice",
-  "fieldset": "Info Card",
-  "description": "A card with title, text and image",
-  "icon": "chrome_reader_mode",
-  "display": "list",
-  "non-repeat": {
-    "title": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Title",
-        "placeholder": "This is where it all begins...",
-        "single": "heading3"
-      }
-    },
-    "text": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Text",
-        "single": "strong, em, hyperlink",
-        "allowTargetBlank": true
-      }
-    },
-    "image": {
-      "type": "Image",
-      "config": {
-        "label": "Image",
-        "constraint": {
-          "width": 600
+  "id": "info_card",
+  "type": "SharedSlice",
+  "name": "InfoCard",
+  "description": "Info Card",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25h",
+      "description": "Info Card",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
         },
-        "thumbnails": []
-      }
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "single": "strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 600
+            },
+            "thumbnails": []
+          }
+        },
+        "text_color": {
+          "type": "Color",
+          "config": {
+            "label": "Text color"
+          }
+        },
+        "background_color": {
+          "type": "Color",
+          "config": {
+            "label": "Background color"
+          }
+        },
+        "background_shape": {
+          "type": "Select",
+          "config": {
+            "label": "Background shape",
+            "default_value": "Shape 1",
+            "options": ["Shape 1", "Shape 2", "Shape 3"]
+          }
+        }
+      },
+      "items": {}
     },
-    "text_color": {
-      "type": "Color",
-      "config": {
-        "label": "Text color"
-      }
-    },
-    "background_color": {
-      "type": "Color",
-      "config": {
-        "label": "Background color"
-      }
-    },
-    "background_shape": {
-      "type": "Select",
-      "config": {
-        "label": "Background shape",
-        "default_value": "Shape 1",
-        "options": [
-          "Shape 1",
-          "Shape 2",
-          "Shape 3"
-        ]
-      }
+    {
+      "id": "inverted",
+      "name": "Inverted",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25h",
+      "description": "Info Card",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "single": "strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 600
+            },
+            "thumbnails": []
+          }
+        },
+        "text_color": {
+          "type": "Color",
+          "config": {
+            "label": "Text color"
+          }
+        },
+        "background_color": {
+          "type": "Color",
+          "config": {
+            "label": "Background color"
+          }
+        },
+        "background_shape": {
+          "type": "Select",
+          "config": {
+            "label": "Background shape",
+            "default_value": "Shape 1",
+            "options": ["Shape 1", "Shape 2", "Shape 3"]
+          }
+        }
+      },
+      "items": {}
     }
-  },
-  "repeat": {}
+  ]
 }

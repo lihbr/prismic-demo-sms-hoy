@@ -149,7 +149,7 @@ module.exports = async () => {
      ** Storybook
      */
     storybook: {
-      stories: ["~/hoy-slices/**/*.stories.js"]
+      stories: ["~/.slicemachine/**/*.stories.js"]
     },
 
     /*

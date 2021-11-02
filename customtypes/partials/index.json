@@ -1,0 +1,104 @@
+{
+  "id": "partials",
+  "label": "Partials",
+  "repeatable": false,
+  "json": {
+    "Header": {
+      "header_logo": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Logo"
+        }
+      },
+      "header_navigation": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "allowTargetBlank": true,
+                "label": "Link",
+                "select": null
+              }
+            },
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title"
+              }
+            },
+            "cta": {
+              "type": "Boolean",
+              "config": {
+                "placeholder_false": "False",
+                "placeholder_true": "True",
+                "default_value": false,
+                "label": "Is a CTA?"
+              }
+            }
+          },
+          "label": "Navigation"
+        }
+      }
+    },
+    "Footer": {
+      "footer_logo": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Logo"
+        }
+      },
+      "footer_motto": {
+        "type": "Text",
+        "config": {
+          "label": "Motto"
+        }
+      },
+      "footer_navigation": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "allowTargetBlank": true,
+                "label": "Link",
+                "select": null
+              }
+            },
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title"
+              }
+            }
+          },
+          "label": "Navigation"
+        }
+      },
+      "footer_information": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph,strong,em,hyperlink",
+          "allowTargetBlank": true,
+          "label": "Information"
+        }
+      },
+      "footer_footnote": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph,strong,em,hyperlink",
+          "allowTargetBlank": true,
+          "label": "Information"
+        }
+      }
+    }
+  },
+  "hash": "5ea521f04571403db62a7b5f992ce6f3",
+  "status": true
+}

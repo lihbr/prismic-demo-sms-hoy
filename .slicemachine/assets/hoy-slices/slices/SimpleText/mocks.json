@@ -1,0 +1,24 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "simple_text",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Revolutionize scalable convergence",
+          "spans": []
+        }
+      ],
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Proident sit incididunt dolor. Do irure officia id irure nulla adipisicing.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

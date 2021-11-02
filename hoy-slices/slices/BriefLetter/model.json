@@ -1,19 +1,27 @@
 {
-  "type": "Slice",
-  "fieldset": "Brief Letter",
-  "description": "Rich text in a letter format",
-  "icon": "description",
-  "display": "list",
-  "non-repeat": {
-    "text": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Text",
-        "placeholder": "Letter content...",
-        "multi": "paragraph, heading2, heading3, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
-        "allowTargetBlank": true
-      }
+  "id": "brief_letter",
+  "type": "SharedSlice",
+  "name": "BriefLetter",
+  "description": "Brief Letter",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25f",
+      "description": "Brief Letter",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "Letter content...",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2,heading3,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item"
+          }
+        }
+      },
+      "items": {}
     }
-  },
-  "repeat": {}
+  ]
 }

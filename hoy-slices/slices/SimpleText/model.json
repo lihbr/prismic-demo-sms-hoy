@@ -1,25 +1,35 @@
 {
-  "type": "Slice",
-  "fieldset": "Text",
-  "description": "A simple text section with an optional title",
-  "icon": "menu",
-  "display": "list",
-  "non-repeat": {
-    "title": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Title",
-        "placeholder": "This is where it all begins... (optional)",
-        "single": "heading2"
-      }
-    },
-    "text": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Text",
-        "single": "strong, em, hyperlink",
-        "allowTargetBlank": true
-      }
+  "id": "simple_text",
+  "type": "SharedSlice",
+  "name": "SimpleText",
+  "description": "Text",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25k",
+      "description": "Text",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins... (optional)",
+            "single": "heading2"
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "strong,em,hyperlink"
+          }
+        }
+      },
+      "items": {}
     }
-  }
+  ]
 }

@@ -1,48 +1,106 @@
 {
-  "type": "Slice",
-  "fieldset": "Text Image",
-  "description": "A simple text and image section with an optional title",
-  "icon": "art_track",
-  "display": "list",
-  "non-repeat": {
-    "title": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Title",
-        "placeholder": "This is where it all begins... (optional)",
-        "single": "heading2"
-      }
-    },
-    "text": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Text",
-        "single": "strong, em, hyperlink",
-        "allowTargetBlank": true
-      }
-    },
-    "image": {
-      "type": "Image",
-      "config": {
-        "label": "Image",
-        "constraint": {
-          "width": 600
+  "id": "text_image",
+  "type": "SharedSlice",
+  "name": "TextImage",
+  "description": "Text Image",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25l",
+      "description": "Text Image",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins... (optional)",
+            "single": "heading2"
+          }
         },
-        "thumbnails": []
-      }
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "single": "strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 600
+            },
+            "thumbnails": []
+          }
+        },
+        "caption": {
+          "type": "Text",
+          "config": {
+            "label": "Caption",
+            "placeholder": "Image caption (optional)"
+          }
+        },
+        "caption_color": {
+          "type": "Color",
+          "config": {
+            "label": "Caption color"
+          }
+        }
+      },
+      "items": {}
     },
-    "caption": {
-      "type": "Text",
-      "config": {
-        "label": "Caption",
-        "placeholder": "Image caption (optional)"
-      }
-    },
-    "caption_color": {
-      "type": "Color",
-      "config": {
-        "label": "Caption color"
-      }
+    {
+      "id": "inverted",
+      "name": "Inverted",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25l",
+      "description": "Text Image",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins... (optional)",
+            "single": "heading2"
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "single": "strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 600
+            },
+            "thumbnails": []
+          }
+        },
+        "caption": {
+          "type": "Text",
+          "config": {
+            "label": "Caption",
+            "placeholder": "Image caption (optional)"
+          }
+        },
+        "caption_color": {
+          "type": "Color",
+          "config": {
+            "label": "Caption color"
+          }
+        }
+      },
+      "items": {}
     }
-  }
+  ]
 }

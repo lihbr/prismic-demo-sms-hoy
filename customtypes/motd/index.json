@@ -1,0 +1,34 @@
+{
+  "id": "motd",
+  "label": "MOTD",
+  "repeatable": false,
+  "json": {
+    "Main": {
+      "motds": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "message": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph",
+                "label": "Message",
+                "placeholder": "If they only eat fish, what about sushis?"
+              }
+            },
+            "author": {
+              "type": "Text",
+              "config": {
+                "label": "Author",
+                "placeholder": "Hugo"
+              }
+            }
+          },
+          "label": "MOTDS"
+        }
+      }
+    }
+  },
+  "hash": "b9e6e34e91b47251edd8f72994935128",
+  "status": true
+}

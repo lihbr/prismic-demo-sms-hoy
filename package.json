@@ -13,8 +13,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "lint": "eslint --ext .js,.vue .",
-    "storybook": "nuxt storybook",
-    "build-storybook": "nuxt storybook build"
+    "slicemachine": "start-slicemachine --port 9999",
+    "storybook": "nuxt storybook"
   },
   "engines": {
     "node": ">=10.16.3",

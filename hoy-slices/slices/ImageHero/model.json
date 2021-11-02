@@ -1,56 +1,65 @@
 {
-  "type": "Slice",
-  "fieldset": "Image Hero",
-  "description": "A hero section with an image",
-  "icon": "wallpaper",
-  "display": "list",
-  "non-repeat": {
-    "title": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Title",
-        "placeholder": "This is where it all begins...",
-        "single": "heading1"
-      }
-    },
-    "text": {
-      "type": "StructuredText",
-      "config": {
-        "label": "Text",
-        "single": "strong, em, hyperlink",
-        "allowTargetBlank": true
-      }
-    },
-    "image": {
-      "type": "Image",
-      "config": {
-        "label": "Image",
-        "constraint": {},
-        "thumbnails": []
-      }
-    },
-    "background": {
-      "type": "Image",
-      "config": {
-        "label": "Background",
-        "constraint": {},
-        "thumbnails": []
+  "id": "image_hero",
+  "type": "SharedSlice",
+  "name": "ImageHero",
+  "description": "Image Hero",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "hphynub5pckvi1a25g",
+      "description": "Image Hero",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "single": "strong,em,hyperlink",
+            "allowTargetBlank": true
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "background": {
+          "type": "Image",
+          "config": {
+            "label": "Background",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "allowTargetBlank": true
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title"
+          }
+        }
       }
     }
-  },
-  "repeat": {
-    "link": {
-      "type": "Link",
-      "config": {
-        "label": "Link",
-        "allowTargetBlank": true
-      }
-    },
-    "title": {
-      "type": "Text",
-      "config": {
-        "label": "Title"
-      }
-    }
-  }
+  ]
 }

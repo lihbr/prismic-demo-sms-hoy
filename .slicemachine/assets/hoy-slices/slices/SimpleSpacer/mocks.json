@@ -1,0 +1,23 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "simple_spacer",
+    "items": [],
+    "primary": {}
+  },
+  {
+    "variation": "small",
+    "name": "Small",
+    "slice_type": "simple_spacer",
+    "items": [],
+    "primary": {}
+  },
+  {
+    "variation": "large",
+    "name": "Large",
+    "slice_type": "simple_spacer",
+    "items": [],
+    "primary": {}
+  }
+]

@@ -1,5 +1,8 @@
 {
-  "libraries": ["@/hoy-slices/slices"],
+  "libraries": [
+    "@/hoy-slices/slices"
+  ],
   "apiEndpoint": "https://200629-sms-hoy.cdn.prismic.io/api/v2",
-  "storybook": "http://localhost:3003"
+  "storybook": "http://localhost:3003",
+  "_latest": "0.1.0"
 }

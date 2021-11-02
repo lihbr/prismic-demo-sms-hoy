@@ -1,0 +1,18 @@
+{
+  "id": "settings",
+  "label": "Settings",
+  "repeatable": false,
+  "json": {
+    "Main": {
+      "google_analytics_id": {
+        "type": "Text",
+        "config": {
+          "label": "Google Analytics ID",
+          "placeholder": "UA-12345678-9"
+        }
+      }
+    }
+  },
+  "hash": "4dcd00005bc08ad04e7643aa95bd0ccd",
+  "status": true
+}

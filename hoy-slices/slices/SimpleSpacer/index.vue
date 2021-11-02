@@ -3,9 +3,9 @@
   <hr
     class="simpleSpacer text-transparent"
     :class="{
-      'h-16': slice.primary.size === 'Small',
-      'h-32': slice.primary.size === 'Medium',
-      'h-64': slice.primary.size === 'Large'
+      'h-16': slice.variation === 'small',
+      'h-32': slice.variation === 'default-slice',
+      'h-64': slice.variation === 'large'
     }"
   />
 </template>

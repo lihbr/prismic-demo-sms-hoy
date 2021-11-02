@@ -3,9 +3,10 @@
   <div class="__page__error py-32 text-center">
     <h1>{{ code }}</h1>
     <h2>{{ message | uc_first }}</h2>
-    <smart-link class="underline" href="/" :external="$route.path === '/'">
+    <nuxt-link v-if="$route.path !== '/'" class="underline" to="/">
       Home page
-    </smart-link>
+    </nuxt-link>
+    <a v-else class="underline" href="/"> Home page </a>
   </div>
 </template>
 

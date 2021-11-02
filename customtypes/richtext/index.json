@@ -1,0 +1,46 @@
+{
+  "id": "richtext",
+  "label": "RichText",
+  "repeatable": false,
+  "json": {
+    "Main": {
+      "rt": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "labels": [
+            "testLabel"
+          ],
+          "allowTargetBlank": true,
+          "label": "rt"
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "labels": [
+            "testLabel"
+          ],
+          "allowTargetBlank": true,
+          "label": "body"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [
+            {
+              "name": "rs",
+              "width": 400,
+              "height": null
+            }
+          ],
+          "label": "image"
+        }
+      }
+    }
+  },
+  "status": false
+}

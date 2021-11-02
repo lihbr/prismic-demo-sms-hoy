@@ -53,9 +53,7 @@ export default {
   },
   computed: {
     isInverted() {
-      return (
-        this.slice.slice_label && this.slice.slice_label.match(/inverted/i)
-      );
+      return this.slice.variation.match(/inverted/i);
     },
     shape() {
       switch (this.slice.primary.background_shape) {
