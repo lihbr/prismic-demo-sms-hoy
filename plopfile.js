@@ -22,8 +22,7 @@ module.exports = plop => {
             value: "partials"
           },
           {
-            name:
-              "sections (page related components that are too specific for belonging to display)",
+            name: "sections (page related components that are too specific for belonging to display)",
             value: "sections"
           }
         ]
@@ -67,7 +66,7 @@ module.exports = plop => {
         type: "input",
         name: "param",
         // eslint-disable-next-line
-        message: "Page route param: (default to \"index\")",
+        message: 'Page route param: (default to "index")',
         default: "index"
       }
     ],

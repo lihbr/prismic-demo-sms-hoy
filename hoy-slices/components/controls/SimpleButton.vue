@@ -3,7 +3,17 @@
   <component
     :is="tag"
     :field="link"
-    class="simpleButton text-2xl sm:text-3xl lg:text-4xl font-medium px-5 py-2 rounded-full text-white"
+    class="
+      simpleButton
+      text-2xl
+      sm:text-3xl
+      lg:text-4xl
+      font-medium
+      px-5
+      py-2
+      rounded-full
+      text-white
+    "
   >
     <slot />
   </component>

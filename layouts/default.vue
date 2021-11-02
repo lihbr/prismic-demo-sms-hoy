@@ -12,8 +12,8 @@
 <script>
 import objectFitImages from "object-fit-images";
 
-import AppHeader from "../hoy-slices/components/partials/header/Header.vue";
-import AppFooter from "../hoy-slices/components/partials/footer/Footer.vue";
+import AppHeader from "~/hoy-slices/components/partials/header/Header.vue";
+import AppFooter from "~/hoy-slices/components/partials/footer/Footer.vue";
 
 export default {
   components: {

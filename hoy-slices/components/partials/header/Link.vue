@@ -2,7 +2,19 @@
 <template>
   <prismic-link
     :field="link"
-    class="headerLink inline-block text-2xl md:text-m lg:text-l xl:text-2xl font-bold px-5 py-2 rounded-full text-white"
+    class="
+      headerLink
+      inline-block
+      text-2xl
+      md:text-m
+      lg:text-l
+      xl:text-2xl
+      font-bold
+      px-5
+      py-2
+      rounded-full
+      text-white
+    "
     :class="
       cta ? 'cta' : 'link md:p-0 md:text-black md:underline md:hover:text-blue'
     "

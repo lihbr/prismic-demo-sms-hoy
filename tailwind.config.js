@@ -1,12 +1,11 @@
 module.exports = {
+  jit: true,
   prefix: "",
   important: false,
   separator: ":",
   theme: {},
   variants: {},
-  purge: {
-    content: ["app/prismic/**/*.vue", "hoy-slices/**/*.vue"]
-  },
+  purge: ["app/prismic/**/*.vue", "hoy-slices/**/*.vue"],
   plugins: [
     ({ addBase, addUtilities, theme }) => {
       const objectFitUtilities = {

@@ -29,7 +29,16 @@
           />
           <figcaption
             v-if="slice.primary.caption"
-            class="hidden sm:block w-64 text-center leading-tight text-m lg:text-xl absolute"
+            class="
+              hidden
+              sm:block
+              w-64
+              text-center
+              leading-tight
+              text-m
+              lg:text-xl
+              absolute
+            "
           >
             <span
               class="text-white px-1 rounded align-middle"

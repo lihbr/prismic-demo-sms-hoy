@@ -3,11 +3,15 @@
   # Base directory
   base = ""
   # Build command
-  # command = "yarn generate"
+  command = "npm run generate"
   # Build directory
-  # publish = "dist/"
+  publish = "dist/"
   # Serverless Lambda functions
   functions = "functions/"
+
+# Enforce yarn
+[build.environment]
+  NODE_VERSION = "16.13.0"
 
 # Post processing configuration
 [build.processing]

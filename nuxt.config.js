@@ -60,7 +60,7 @@ module.exports = async () => {
      */
     buildModules: [
       [
-        "~/modules/head",
+        "@lihbr/utils-nuxt.head",
         {
           lang: env.APP_LANG,
           name: env.APP_NAME,
@@ -121,6 +121,7 @@ module.exports = async () => {
         "@nuxtjs/prismic",
         {
           endpoint: "https://200629-sms-hoy.prismic.io/api/v2",
+          modern: true,
           apiOptions: {
             routes: [
               {
@@ -128,8 +129,7 @@ module.exports = async () => {
                 path: "/:uid"
               }
             ]
-          },
-          disableGenerator: true
+          }
         }
       ],
       "nuxt-sm",
@@ -149,7 +149,6 @@ module.exports = async () => {
      ** Storybook
      */
     storybook: {
-      addons: ["@storybook/addon-knobs/register"],
       stories: ["~/hoy-slices/**/*.stories.js"]
     },
 

@@ -13,7 +13,19 @@
           type="email"
           value=""
           name="EMAIL"
-          class="text-2xl sm:text-3xl lg:text-4xl font-medium py-2 border-b border-dashed focus:border-blue focus:outline-none mb-5 sm:mb-0 sm:mr-5 w-full sm:max-w-md"
+          class="
+            text-2xl
+            sm:text-3xl
+            lg:text-4xl
+            font-medium
+            py-2
+            border-b border-dashed
+            focus:border-blue focus:outline-none
+            mb-5
+            sm:mb-0 sm:mr-5
+            w-full
+            sm:max-w-md
+          "
           :placeholder="slice.primary.input_placeholder || 'Email'"
           title="email address"
           required
