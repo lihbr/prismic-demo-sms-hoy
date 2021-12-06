@@ -4,20 +4,14 @@
     <div class="content">
       <slice-zone
         class="sliceZone space-y-8 py-32 sm:pt-48"
-        type="page"
-        uid="home"
+        :slices="data.body"
       />
     </div>
   </div>
 </template>
 
 <script>
-import SliceZone from "vue-slicezone";
-
 export default {
-  components: {
-    SliceZone
-  },
   async asyncData(context) {
     const data = (await context.$prismic.api.getByUID("page", "home")).data;
 
