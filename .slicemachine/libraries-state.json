@@ -1,0 +1,858 @@
+{
+  "hoy-slices/slices": {
+    "components": {
+      "brief_letter": {
+        "library": "hoy-slices/slices",
+        "id": "brief_letter",
+        "name": "BriefLetter",
+        "description": "Brief Letter",
+        "model": {
+          "id": "brief_letter",
+          "type": "SharedSlice",
+          "name": "BriefLetter",
+          "description": "Brief Letter",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25f",
+              "description": "Brief Letter",
+              "primary": {
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "Letter content...",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,heading2,heading3,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "brief_letter",
+            "items": [],
+            "primary": {
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Qui est aliqua consequat sunt veniam aliqua exercitation sunt nulla Lorem pariatur.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\BriefLetter\\default-slice\\preview.png"
+          }
+        }
+      },
+      "image_hero": {
+        "library": "hoy-slices/slices",
+        "id": "image_hero",
+        "name": "ImageHero",
+        "description": "Image Hero",
+        "model": {
+          "id": "image_hero",
+          "type": "SharedSlice",
+          "name": "ImageHero",
+          "description": "Image Hero",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25g",
+              "description": "Image Hero",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "single": "strong,em,hyperlink",
+                    "allowTargetBlank": true
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "background": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Background",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "allowTargetBlank": true
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "image_hero",
+            "items": [
+              {
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "title": "utilize value-added schemas"
+              },
+              {
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                },
+                "title": "syndicate customized initiatives"
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Incentivize wireless solutions",
+                  "spans": []
+                }
+              ],
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Excepteur consequat adipisicing anim est et cupidatat Lorem culpa anim sint. Laboris non laboris tempor aliquip consequat minim qui. Mollit deserunt commodo dolore consectetur est consectetur esse fugiat.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+              },
+              "background": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\ImageHero\\default-slice\\preview.png"
+          }
+        }
+      },
+      "info_card": {
+        "library": "hoy-slices/slices",
+        "id": "info_card",
+        "name": "InfoCard",
+        "description": "Info Card",
+        "model": {
+          "id": "info_card",
+          "type": "SharedSlice",
+          "name": "InfoCard",
+          "description": "Info Card",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25h",
+              "description": "Info Card",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "single": "strong,em,hyperlink",
+                    "allowTargetBlank": true
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": 600
+                    },
+                    "thumbnails": []
+                  }
+                },
+                "text_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Text color"
+                  }
+                },
+                "background_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background color"
+                  }
+                },
+                "background_shape": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Background shape",
+                    "default_value": "Shape 1",
+                    "options": [
+                      "Shape 1",
+                      "Shape 2",
+                      "Shape 3"
+                    ]
+                  }
+                }
+              },
+              "items": {}
+            },
+            {
+              "id": "inverted",
+              "name": "Inverted",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25h",
+              "description": "Info Card",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "single": "strong,em,hyperlink",
+                    "allowTargetBlank": true
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": 600
+                    },
+                    "thumbnails": []
+                  }
+                },
+                "text_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Text color"
+                  }
+                },
+                "background_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background color"
+                  }
+                },
+                "background_shape": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Background shape",
+                    "default_value": "Shape 1",
+                    "options": [
+                      "Shape 1",
+                      "Shape 2",
+                      "Shape 3"
+                    ]
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "info_card",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Envisioneer frictionless blockchains",
+                  "spans": []
+                }
+              ],
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Amet ut eu dolor ut irure magna aliqua aliqua mollit enim eiusmod aliquip duis eiusmod nulla. Aliqua eiusmod esse irure.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 600,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=600&h=500&fit=crop"
+              },
+              "text_color": "#62854a",
+              "background_color": "#33f2f5",
+              "background_shape": "Shape 1"
+            }
+          },
+          "inverted": {
+            "variation": "inverted",
+            "name": "Inverted",
+            "slice_type": "info_card",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Whiteboard front-end initiatives",
+                  "spans": []
+                }
+              ],
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Id laborum id magna irure voluptate irure labore quis duis irure aute excepteur deserunt. Nisi dolor incididunt minim non qui proident mollit elit aute officia excepteur sit. Exercitation mollit ea deserunt veniam culpa proident esse labore ea.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 600,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=600&h=500&fit=crop"
+              },
+              "text_color": "#e7194f",
+              "background_color": "#33c410",
+              "background_shape": "Shape 2"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\InfoCard\\default-slice\\preview.png"
+          },
+          "inverted": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\InfoCard\\inverted\\preview.png"
+          }
+        }
+      },
+      "newsletter_form": {
+        "library": "hoy-slices/slices",
+        "id": "newsletter_form",
+        "name": "NewsletterForm",
+        "description": "Newsletter Form",
+        "model": {
+          "id": "newsletter_form",
+          "type": "SharedSlice",
+          "name": "NewsletterForm",
+          "description": "Newsletter Form",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25i",
+              "description": "Newsletter Form",
+              "primary": {
+                "input_placeholder": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Input placeholder",
+                    "placeholder": "john.doe@example.com"
+                  }
+                },
+                "subscribe_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subscribe label",
+                    "placeholder": "Subscribe"
+                  }
+                },
+                "form_action": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Form action",
+                    "placeholder": "Mailchimp form callback, leave empty to use global configuration"
+                  }
+                },
+                "honey_pot": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Honey pot ID",
+                    "placeholder": "Mailchimp honey pot ID, leave empty to use global configuration"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "newsletter_form",
+            "items": [],
+            "primary": {
+              "input_placeholder": "unleash cutting-edge niches",
+              "subscribe_label": "extend out-of-the-box blockchains",
+              "form_action": "scale front-end action-items",
+              "honey_pot": "deliver end-to-end systems"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\NewsletterForm\\default-slice\\preview.png"
+          }
+        }
+      },
+      "simple_spacer": {
+        "library": "hoy-slices/slices",
+        "id": "simple_spacer",
+        "name": "SimpleSpacer",
+        "description": "Spacer",
+        "model": {
+          "id": "simple_spacer",
+          "type": "SharedSlice",
+          "name": "SimpleSpacer",
+          "description": "Spacer",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25j",
+              "description": "Spacer",
+              "primary": {},
+              "items": {}
+            },
+            {
+              "id": "small",
+              "name": "Small",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25j",
+              "description": "Spacer",
+              "primary": {},
+              "items": {}
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25j",
+              "description": "Spacer",
+              "primary": {},
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "simple_spacer",
+            "items": [],
+            "primary": {}
+          },
+          "small": {
+            "variation": "small",
+            "name": "Small",
+            "slice_type": "simple_spacer",
+            "items": [],
+            "primary": {}
+          },
+          "large": {
+            "variation": "large",
+            "name": "Large",
+            "slice_type": "simple_spacer",
+            "items": [],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\SimpleSpacer\\default-slice\\preview.png"
+          },
+          "small": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\SimpleSpacer\\small\\preview.png"
+          },
+          "large": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\SimpleSpacer\\large\\preview.png"
+          }
+        }
+      },
+      "simple_text": {
+        "library": "hoy-slices/slices",
+        "id": "simple_text",
+        "name": "SimpleText",
+        "description": "Text",
+        "model": {
+          "id": "simple_text",
+          "type": "SharedSlice",
+          "name": "SimpleText",
+          "description": "Text",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25k",
+              "description": "Text",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins... (optional)",
+                    "single": "heading2"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "strong,em,hyperlink"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "simple_text",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Revolutionize scalable convergence",
+                  "spans": []
+                }
+              ],
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Proident sit incididunt dolor. Do irure officia id irure nulla adipisicing.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\SimpleText\\default-slice\\preview.png"
+          }
+        }
+      },
+      "text_image": {
+        "library": "hoy-slices/slices",
+        "id": "text_image",
+        "name": "TextImage",
+        "description": "Text Image",
+        "model": {
+          "id": "text_image",
+          "type": "SharedSlice",
+          "name": "TextImage",
+          "description": "Text Image",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25l",
+              "description": "Text Image",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins... (optional)",
+                    "single": "heading2"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "single": "strong,em,hyperlink",
+                    "allowTargetBlank": true
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": 600
+                    },
+                    "thumbnails": []
+                  }
+                },
+                "caption": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Caption",
+                    "placeholder": "Image caption (optional)"
+                  }
+                },
+                "caption_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Caption color"
+                  }
+                }
+              },
+              "items": {}
+            },
+            {
+              "id": "inverted",
+              "name": "Inverted",
+              "docURL": "...",
+              "version": "hphynub5pckvi1a25l",
+              "description": "Text Image",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins... (optional)",
+                    "single": "heading2"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "single": "strong,em,hyperlink",
+                    "allowTargetBlank": true
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": 600
+                    },
+                    "thumbnails": []
+                  }
+                },
+                "caption": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Caption",
+                    "placeholder": "Image caption (optional)"
+                  }
+                },
+                "caption_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Caption color"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "text_image",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Revolutionize strategic partnerships",
+                  "spans": []
+                }
+              ],
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Culpa exercitation laborum voluptate cupidatat labore non amet ipsum.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 600,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=600&h=500&fit=crop"
+              },
+              "caption": "generate wireless technologies",
+              "caption_color": "#4a8cc3"
+            }
+          },
+          "inverted": {
+            "variation": "inverted",
+            "name": "Inverted",
+            "slice_type": "text_image",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Strategize efficient e-tailers",
+                  "spans": []
+                }
+              ],
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Enim id esse quis fugiat minim. Labore in ut duis pariatur nisi cupidatat consequat tempor culpa. Minim magna proident proident non culpa mollit ex officia elit.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 600,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=600&h=500&fit=crop"
+              },
+              "caption": "incentivize virtual models",
+              "caption_color": "#528a49"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default-slice": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\TextImage\\default-slice\\preview.png"
+          },
+          "inverted": {
+            "exists": true,
+            "path": "D:\\Libraries\\Desktop\\prismic\\demo\\sms-hoy\\.slicemachine\\assets\\hoy-slices\\slices\\TextImage\\inverted\\preview.png"
+          }
+        }
+      }
+    }
+  }
+}
