@@ -122,7 +122,6 @@ module.exports = async () => {
         {
           endpoint: "https://200629-sms-hoy.prismic.io/api/v2",
           modern: true,
-          previewReloadType: "hard",
           apiOptions: {
             routes: [
               {

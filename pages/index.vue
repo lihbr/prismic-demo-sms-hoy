@@ -20,8 +20,6 @@ export default {
   async asyncData(context) {
     const { data } = await context.$prismic.api.getByUID("page", "home");
 
-    console.log(context.$sliceMachine.resolver);
-
     return { data };
   },
   head() {
