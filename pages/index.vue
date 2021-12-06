@@ -11,9 +11,16 @@
 </template>
 
 <script>
+import SliceZone from "vue-slicezone";
+
 export default {
+  components: {
+    SliceZone
+  },
   async asyncData(context) {
-    const data = (await context.$prismic.api.getByUID("page", "home")).data;
+    const { data } = await context.$prismic.api.getByUID("page", "home");
+
+    console.log(context.$sliceMachine.resolver);
 
     return { data };
   },
