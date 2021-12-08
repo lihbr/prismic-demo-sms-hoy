@@ -188,7 +188,12 @@ module.exports = async () => {
           minifyJS: false
         }
       },
-      transpile: ["vue-slicezone"]
+      transpile: ["vue-slicezone"],
+      loaders: {
+        css: {
+          modules: false
+        }
+      }
     }
   };
 };
