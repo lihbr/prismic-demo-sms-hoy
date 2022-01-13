@@ -1,30 +1,14 @@
 <!-- HEALTH:UNKNOWN header-links -->
 <template>
   <nav
-    class="
-      headerLinks
-      absolute
-      md:static
-      pr-4
-      md:pr-0
-      text-right
-      md:text-left
-      w-screen
-      md:w-auto
-    "
+    class="headerLinks absolute md:static pr-4 md:pr-0 text-right md:text-left w-screen md:w-auto"
     :class="{ active }"
   >
     <ul class="mt-5 -mb-1 md:-mx-2 md:my-0">
       <li
         v-for="(item, index) in links"
         :key="`${item.title}-${index}`"
-        class="
-          md:inline-block
-          py-1
-          md:px-2 md:py-0
-          transition-transform
-          ease-in
-        "
+        class="md:inline-block py-1 md:px-2 md:py-0 transition-transform ease-in"
         :class="{ 'duration-200': !active, 'duration-300': active }"
       >
         <header-link :link="item.link" :cta="item.cta">

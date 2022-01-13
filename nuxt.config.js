@@ -195,6 +195,11 @@ export default defineNuxtConfig({
       "lodash",
       "sm-commons",
       "@prismicio/slice-canvas-renderer"
-    ]
+    ],
+    loaders: {
+      css: {
+        modules: false
+      }
+    }
   }
 });

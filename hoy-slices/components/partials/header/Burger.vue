@@ -1,14 +1,7 @@
 <!-- HEALTH:UNKNOWN header-burger -->
 <template>
   <button
-    class="
-      headerBurger
-      p-2
-      font-bold
-      text-blue text-xl
-      cursor-pointer
-      focus:outline-none
-    "
+    class="headerBurger p-2 font-bold text-blue text-xl cursor-pointer focus:outline-none"
     :class="{ active: cValue }"
     @click="cValue = !cValue"
   >

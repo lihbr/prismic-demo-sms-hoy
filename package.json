@@ -31,7 +31,7 @@
   ],
   "dependencies": {
     "@prismicio/slice-canvas-renderer-vue": "^0.0.5",
-    "core-js": "3.19.1",
+    "core-js": "3.19.3",
     "dotenv": "10.0.0",
     "is-mobile": "3.0.0",
     "lodash": "4.17.21",
@@ -40,11 +40,12 @@
     "source-sans-pro": "3.6.0",
     "std-env": "3.0.1",
     "vue-functional-data-merge": "3.1.0",
+    "vue-imgix": "2.9.0",
     "vue-slicezone": "0.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "14.1.0",
-    "@commitlint/config-conventional": "14.1.0",
+    "@commitlint/cli": "15.0.0",
+    "@commitlint/config-conventional": "15.0.0",
     "@lihbr/utils-nuxt.head": "0.2.2",
     "@nuxt/bridge": "npm:@nuxt/bridge-edge@3.0.0-27367970.e0fec80",
     "@nuxtjs/eslint-module": "3.0.2",
@@ -54,21 +55,20 @@
     "@nuxtjs/prismic": "1.4.0",
     "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/sitemap": "2.4.0",
-    "@nuxtjs/storybook": "4.1.1",
     "@nuxtjs/tailwindcss": "4.2.1",
     "babel-eslint": "10.1.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-vue": "8.0.3",
-    "fibers": "5.0.0",
+    "eslint-plugin-vue": "8.2.0",
     "husky": "4.3.8",
-    "nuxt-sm": "0.0.8",
+    "nuxt-sm": "0.0.9",
     "postcss": "8.4.4",
     "postcss-nested": "5.0.6",
-    "prettier": "2.4.1",
+    "prettier": "2.5.1",
     "shx": "0.3.3",
-    "slice-machine-ui": "0.1.2-slicecanvas.3"
+    "slice-machine-ui": "0.1.2-slicecanvas.3",
+    "sm-commons": "0.0.24"
   }
 }

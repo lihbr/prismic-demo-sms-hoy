@@ -3,13 +3,7 @@
   <div class="__page__preview min-h-screen py-32 flex items-center">
     <small-container class="flex-1 sm:flex">
       <picture
-        class="
-          block
-          sm:self-stretch sm:flex-1
-          rounded-2xl
-          overflow-hidden
-          relative
-        "
+        class="block sm:self-stretch sm:flex-1 rounded-2xl overflow-hidden relative"
       >
         <img
           src="https://images.prismic.io/200629-sms-hoy/f596a543-d593-4296-9abd-3d3ac15f1e39_ray-hennessy-mpw37yXc_WQ-unsplash.jpg?auto=compress,format&rect=0,0,1839,1533&w=300&h=250"
