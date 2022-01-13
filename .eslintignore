@@ -2,6 +2,8 @@ modules/*/plugin.js
 plop-templates/*.vue
 static/sw.js
 
+.output
+
 # .gitignore copy
 
 ### Storybook ###

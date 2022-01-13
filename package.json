@@ -6,15 +6,15 @@
   "author": "Lucie Haberer <hello@lihbr.com> (https://lihbr.com)",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxi dev",
     "predev:netlify": "shx rm -rf ./.nuxt",
     "dev:netlify": "netlify dev",
-    "generate": "nuxt generate",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "generate": "nuxi generate",
+    "build": "nuxi build",
+    "start": "nuxi preview",
     "lint": "eslint --ext .js,.vue .",
     "slicemachine": "start-slicemachine --port 9999",
-    "storybook": "nuxt storybook"
+    "storybook": "nuxi storybook"
   },
   "engines": {
     "node": ">=10.16.3",
@@ -30,7 +30,6 @@
     "hoy-slices"
   ],
   "dependencies": {
-    "@prismicio/client": "5.1.0",
     "@prismicio/slice-canvas-renderer-vue": "^0.0.5",
     "core-js": "3.19.1",
     "dotenv": "10.0.0",
@@ -39,6 +38,7 @@
     "nuxt": "2.15.8",
     "object-fit-images": "3.2.4",
     "source-sans-pro": "3.6.0",
+    "std-env": "3.0.1",
     "vue-functional-data-merge": "3.1.0",
     "vue-slicezone": "0.1.0"
   },
@@ -46,6 +46,7 @@
     "@commitlint/cli": "14.1.0",
     "@commitlint/config-conventional": "14.1.0",
     "@lihbr/utils-nuxt.head": "0.2.2",
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge@3.0.0-27367970.e0fec80",
     "@nuxtjs/eslint-module": "3.0.2",
     "@nuxtjs/global-components": "0.6.1",
     "@nuxtjs/google-analytics": "2.4.0",

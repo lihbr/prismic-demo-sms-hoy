@@ -1,194 +1,200 @@
-const { envConfig } = require("./env.config");
-const logger = require("consola").withScope("nuxt");
+import { defineNuxtConfig } from "@nuxt/bridge";
+import consola from "consola";
 
-module.exports = async () => {
-  // Configure application environment
-  const env = envConfig(/* settings, CMS_GLOBAL */);
+import { envConfig } from "./env.config";
 
-  return {
-    /*
-     ** Application target
-     */
-    target: "static",
+const logger = consola.withScope("nuxt");
+// Configure application environment
+const env = envConfig(/* settings, CMS_GLOBAL */);
 
-    /*
-     ** Build target
-     */
-    modern: env.DEV ? false : "client",
+export default defineNuxtConfig({
+  /*
+   ** Application target
+   */
+  target: "static",
 
-    /*
-     ** Generate
-     */
-    generate: {
-      fallback: true
-    },
+  /*
+   ** Build target
+   */
+  modern: env.DEV ? false : "client",
 
-    /*
-     ** Head of the page, handled by head module
-     */
-    head: {},
+  /*
+   ** Generate
+   */
+  generate: {
+    fallback: true
+  },
 
-    /*
-     ** Customize the progress-bar color
-     */
-    loading: { color: env.APP_ACCENT_COLOR },
+  /*
+   ** Head of the page, handled by head module
+   */
+  head: {},
 
-    /*
-     ** Global CSS
-     */
-    css: ["~/assets/css/style.css"],
+  /*
+   ** Customize the progress-bar color
+   */
+  loading: { color: env.APP_ACCENT_COLOR },
 
-    /*
-     ** Plugins to load before mounting the App
-     */
-    plugins: ["~/plugins/logger", "~/plugins/filters", "~/hoy-slices/plugin"],
+  /*
+   ** Global CSS
+   */
+  css: ["~/assets/css/style.css"],
 
-    /*
-     ** Nuxt.js modules
-     */
-    modules: [
-      [
-        "~/modules/cms-settings",
-        {
-          endpoint: "https://200629-sms-hoy.prismic.io/api/v2"
-        }
-      ]
+  /*
+   ** Plugins to load before mounting the App
+   */
+  plugins: ["~/plugins/logger", "~/plugins/filters", "~/hoy-slices/plugin"],
+
+  /*
+   ** Nuxt.js modules
+   */
+  modules: [
+    [
+      "~/modules/cms-settings",
+      {
+        endpoint: "https://200629-sms-hoy.prismic.io/api/v2"
+      }
+    ]
+  ],
+
+  /*
+   ** Nuxt.js build modules
+   */
+  buildModules: [
+    [
+      "@lihbr/utils-nuxt.head",
+      {
+        lang: env.APP_LANG,
+        name: env.APP_NAME,
+        description: env.APP_DESC,
+        metaImage: {
+          og: env.APP_METAIMG_OG,
+          tw: env.APP_METAIMG_TW
+        },
+        twitterHandle: env.APP_TWITTER_HANDLE,
+        backgroundColor: env.APP_BACKGROUND_COLOR,
+        accentColor: env.APP_ACCENT_COLOR,
+        titleFormat: env.APP_TITLE_FORMAT,
+        url: env.APP_URL
+      }
     ],
-
-    /*
-     ** Nuxt.js build modules
-     */
-    buildModules: [
-      [
-        "@lihbr/utils-nuxt.head",
-        {
+    "@nuxtjs/eslint-module",
+    "@nuxtjs/global-components",
+    "@nuxtjs/sitemap",
+    ["@nuxtjs/netlify-files", { existingFilesDirectory: __dirname }],
+    "@nuxtjs/google-analytics",
+    [
+      "@nuxtjs/pwa",
+      {
+        workbox: {
+          clientsClaim: false,
+          offlineAnalytics: !!env.GTM_ID && true,
+          // Register image CDN here
+          runtimeCaching: [
+            {
+              urlPattern: `https://images.prismic.io/${process.env.PRISMIC_REPO}/.*`,
+              handler: "networkFirst"
+            }
+          ]
+        },
+        meta: false,
+        icon: {
+          plugin: false
+        },
+        manifest: {
+          // display: "browser", // disable "Add to Home Screen" button
           lang: env.APP_LANG,
           name: env.APP_NAME,
+          short_name: env.APP_NAME,
           description: env.APP_DESC,
-          metaImage: {
-            og: env.APP_METAIMG_OG,
-            tw: env.APP_METAIMG_TW
-          },
-          twitterHandle: env.APP_TWITTER_HANDLE,
-          backgroundColor: env.APP_BACKGROUND_COLOR,
-          accentColor: env.APP_ACCENT_COLOR,
-          titleFormat: env.APP_TITLE_FORMAT,
-          url: env.APP_URL
+          background_color: env.APP_BACKGROUND_COLOR,
+          theme_color: env.APP_ACCENT_COLOR
         }
-      ],
-      "@nuxtjs/eslint-module",
-      "@nuxtjs/global-components",
-      "@nuxtjs/sitemap",
-      ["@nuxtjs/netlify-files", { existingFilesDirectory: __dirname }],
-      "@nuxtjs/google-analytics",
-      [
-        "@nuxtjs/pwa",
-        {
-          workbox: {
-            clientsClaim: false,
-            offlineAnalytics: !!env.GTM_ID && true,
-            // Register image CDN here
-            runtimeCaching: [
-              {
-                urlPattern: `https://images.prismic.io/${process.env.PRISMIC_REPO}/.*`,
-                handler: "networkFirst"
-              }
-            ]
-          },
-          meta: false,
-          icon: {
-            plugin: false
-          },
-          manifest: {
-            // display: "browser", // disable "Add to Home Screen" button
-            lang: env.APP_LANG,
-            name: env.APP_NAME,
-            short_name: env.APP_NAME,
-            description: env.APP_DESC,
-            background_color: env.APP_BACKGROUND_COLOR,
-            theme_color: env.APP_ACCENT_COLOR
-          }
-        }
-      ],
-      [
-        "@nuxtjs/tailwindcss",
-        {
-          configPath: "~/tailwind.config.js",
-          cssPath: "~/assets/css/tailwind.css"
-        }
-      ],
-      [
-        "@nuxtjs/prismic",
-        {
-          endpoint: "https://200629-sms-hoy.prismic.io/api/v2",
-          modern: true,
-          apiOptions: {
-            routes: [
-              {
-                type: "page",
-                path: "/:uid"
-              }
-            ]
-          }
-        }
-      ],
-      "nuxt-sm",
-      "~/hoy-slices/module"
+      }
     ],
-
-    /*
-     ** Sitemap
-     */
-    sitemap: {
-      hostname: env.APP_URL,
-      gzip: true,
-      exclude: []
-    },
-
-    /*
-     ** Storybook
-     */
-    storybook: {
-      stories: ["~/.slicemachine/**/*.stories.js"]
-    },
-
-    /*
-     ** Ignore
-     */
-    ignore: ["**/*.stories.js"],
-
-    /*
-     ** Env
-     */
-    env,
-
-    /*
-     ** Public runtime config
-     */
-    publicRuntimeConfig: {
-      SM_HOY_MAILCHIMP_FORM_ACTION: "",
-      SM_HOY_MAILCHIMP_HONEY_POT: ""
-    },
-
-    /*
-     ** Server configuration
-     */
-    server: {
-      host: env.APP_HOST,
-      port: env.APP_PORT
-    },
-
-    /*
-     ** Build
-     */
-    build: {
-      html: {
-        minify: {
-          minifyCSS: false,
-          minifyJS: false
+    [
+      "@nuxtjs/tailwindcss",
+      {
+        configPath: "~/tailwind.config.js",
+        cssPath: "~/assets/css/tailwind.css"
+      }
+    ],
+    [
+      "@nuxtjs/prismic",
+      {
+        endpoint: "https://200629-sms-hoy.prismic.io/api/v2",
+        modern: true,
+        apiOptions: {
+          routes: [
+            {
+              type: "page",
+              path: "/:uid"
+            }
+          ]
         }
-      },
-      transpile: ["vue-slicezone"]
-    }
-  };
-};
+      }
+    ],
+    "nuxt-sm",
+    "~/hoy-slices/module"
+  ],
+
+  /*
+   ** Sitemap
+   */
+  sitemap: {
+    hostname: env.APP_URL,
+    gzip: true,
+    exclude: []
+  },
+
+  /*
+   ** Storybook
+   */
+  storybook: {
+    stories: ["~/.slicemachine/**/*.stories.js"]
+  },
+
+  /*
+   ** Ignore
+   */
+  ignore: ["**/*.stories.js"],
+
+  /*
+   ** Env
+   */
+  env,
+
+  /*
+   ** Public runtime config
+   */
+  publicRuntimeConfig: {
+    SM_HOY_MAILCHIMP_FORM_ACTION: "",
+    SM_HOY_MAILCHIMP_HONEY_POT: ""
+  },
+
+  /*
+   ** Server configuration
+   */
+  server: {
+    host: env.APP_HOST,
+    port: env.APP_PORT
+  },
+
+  /*
+   ** Build
+   */
+  build: {
+    html: {
+      minify: {
+        minifyCSS: false,
+        minifyJS: false
+      }
+    },
+    transpile: [
+      "vue-slicezone",
+      "lodash",
+      "sm-commons",
+      "@prismicio/slice-canvas-renderer"
+    ]
+  }
+});
