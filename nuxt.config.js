@@ -194,6 +194,7 @@ export default defineNuxtConfig({
       "vue-slicezone",
       "lodash",
       "sm-commons",
+      "prismic-dom",
       "@prismicio/slice-canvas-renderer"
     ],
     loaders: {

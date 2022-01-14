@@ -30,7 +30,7 @@
     "hoy-slices"
   ],
   "dependencies": {
-    "@prismicio/slice-canvas-renderer-vue": "^0.0.5",
+    "@prismicio/slice-canvas-renderer-vue": "^0.0.10",
     "core-js": "3.19.3",
     "dotenv": "10.0.0",
     "is-mobile": "3.0.0",
